@@ -115,7 +115,17 @@ Another example::
     >>> name = 'Dad'
     >>> 'Hi {name}'.format(**locals())
     'Hi Dad'
-
     
+
+Lists are Mutable, Strings are Not
+----------------------------------
+
+
+* Lists can be changed.  Strings create new objects.
+
+==========
+Decorators
+==========    
+
 
 
