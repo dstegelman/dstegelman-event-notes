@@ -166,6 +166,61 @@ Class Statement
 * Need to brush up on some basic python iterators, loops, etc.
 * Metaclasses
 
+Iterators
+---------
+
+* A for loop evaluates and expressiosn to get an iterable and then calls iter() to get an iterator.
+* The iterators next() method is called until StopITeration is raised.
+
+* Iterable items get the iter() method called.
+
+::
+
+    m = [1, 2, 3]
+    it = iter(m)
+    it.next()
+    it.next()
+    it.next()
+    
+    
+Generators
+----------
+
+::
+
+    def list123():
+        yield 1
+        yield 2
+        yield 3
+        
+        
+    it = list123()
+    it.next()
+    it.next()
+    it.next()
+    
+* Look at next (David Beazley talk on Generators)
+
+::
+
+    import operator
+    ops = {
+        '+': operator.add,
+        '-': operator.sub,
+    }
+    
+    
+    ops[op] (lhs, rhs)
+    
+    def calc(expr):
+        lhs, op, rhs = expr
+        lhs, rhs = int(lhs), int(rhs)
+        return ops[op] (lhs, rhs)
+
+
+
+
+
     
 
 

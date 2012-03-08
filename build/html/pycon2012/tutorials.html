@@ -210,6 +210,54 @@
 <li>Metaclasses</li>
 </ul>
 </div>
+<div class="section" id="iterators">
+<h3>Iterators<a class="headerlink" href="#iterators" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>A for loop evaluates and expressiosn to get an iterable and then calls iter() to get an iterator.</li>
+<li>The iterators next() method is called until StopITeration is raised.</li>
+<li>Iterable items get the iter() method called.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generators">
+<h3>Generators<a class="headerlink" href="#generators" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">list123</span><span class="p">():</span>
+    <span class="k">yield</span> <span class="mi">1</span>
+    <span class="k">yield</span> <span class="mi">2</span>
+    <span class="k">yield</span> <span class="mi">3</span>
+
+
+<span class="n">it</span> <span class="o">=</span> <span class="n">list123</span><span class="p">()</span>
+<span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Look at next (David Beazley talk on Generators)</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">operator</span>
+<span class="n">ops</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&#39;+&#39;</span><span class="p">:</span> <span class="n">operator</span><span class="o">.</span><span class="n">add</span><span class="p">,</span>
+    <span class="s">&#39;-&#39;</span><span class="p">:</span> <span class="n">operator</span><span class="o">.</span><span class="n">sub</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="n">ops</span><span class="p">[</span><span class="n">op</span><span class="p">]</span> <span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">calc</span><span class="p">(</span><span class="n">expr</span><span class="p">):</span>
+    <span class="n">lhs</span><span class="p">,</span> <span class="n">op</span><span class="p">,</span> <span class="n">rhs</span> <span class="o">=</span> <span class="n">expr</span>
+    <span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lhs</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">rhs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ops</span><span class="p">[</span><span class="n">op</span><span class="p">]</span> <span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -231,6 +279,8 @@
 <li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#lists-are-mutable-strings-are-not">Lists are Mutable, Strings are Not</a></li>
 <li><a class="reference internal" href="#class-statement">Class Statement</a></li>
+<li><a class="reference internal" href="#iterators">Iterators</a></li>
+<li><a class="reference internal" href="#generators">Generators</a></li>
 </ul>
 </li>
 </ul>
