@@ -70,15 +70,15 @@
 <h2>Dictionaries and Namespaces<a class="headerlink" href="#dictionaries-and-namespaces" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="python-objects-and-vars">
 <h3>Python Objects and Vars<a class="headerlink" href="#python-objects-and-vars" title="Permalink to this headline">¶</a></h3>
-<p><em>Things like a = 17 are essentially dictionaries.  These are added to ``object land``.
-* Python object has:
-*</em> Single value
-** Single Type
-** some number of attributes
-** single ID
-** zero or one or more names in one or more namespaces
-** one or more base classes</p>
 <ul class="simple">
+<li>Things like a = 17 are essentially dictionaries.  These are added to <tt class="docutils literal"><span class="pre">object</span> <span class="pre">land</span></tt>.</li>
+<li>Python object has</li>
+<li>Single value</li>
+<li>Single Type</li>
+<li>Some number of attributes</li>
+<li>Single ID</li>
+<li>Zero or one or more names in one or more namespaces</li>
+<li>One or more base classes</li>
 <li>When lists are appened IDs do not change, strings do.</li>
 <li>Can&#8217;t set attributes of built in types.</li>
 <li>IDs match because there only needs to be one actual object in memory</li>
@@ -97,6 +97,14 @@
 <li>Local names</li>
 <li>Namespaces of encolsing function, search starting with the nearst closing scope</li>
 </ul>
+<p>Excersise:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">locals</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="nb">globals</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="nb">locals</span><span class="p">()</span> <span class="o">==</span> <span class="nb">globals</span><span class="p">()</span>
+<span class="nb">locals</span><span class="p">()</span> <span class="ow">is</span> <span class="nb">globals</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In this case locals() is globals()</p>
 </div>
 </div>
 </div>
