@@ -170,10 +170,30 @@
 <li>Lists can be changed.  Strings create new objects.</li>
 </ul>
 </div>
+<div class="section" id="class-statement">
+<h3>Class Statement<a class="headerlink" href="#class-statement" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>single ID</li>
+<li>Single value</li>
+<li>Number of attributes</li>
+<li>Single Type</li>
+<li>one or more namespaces</li>
+<li>One or more base classes</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">ClassName</span><span class="p">()</span>
+<span class="n">ClassName</span><span class="p">()</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><pre>Class Num(object):
+
+    def __init__(self, amount):
+        self.amount = amount
+
+    def add(self, value):
+        return self.amount + value</pre>
 </div>
 </div>
-<div class="section" id="decorators">
-<h1>Decorators<a class="headerlink" href="#decorators" title="Permalink to this headline">¶</a></h1>
+</div>
 </div>
 
 
@@ -193,11 +213,11 @@
 <li><a class="reference internal" href="#namespace-changes">Namespace Changes</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#lists-are-mutable-strings-are-not">Lists are Mutable, Strings are Not</a></li>
+<li><a class="reference internal" href="#class-statement">Class Statement</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#decorators">Decorators</a></li>
 </ul>
 
   <h4>Previous topic</h4>

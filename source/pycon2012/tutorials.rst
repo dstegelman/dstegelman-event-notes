@@ -123,9 +123,35 @@ Lists are Mutable, Strings are Not
 
 * Lists can be changed.  Strings create new objects.
 
-==========
-Decorators
-==========    
+Class Statement
+---------------
+
+* single ID
+* Single value
+* Number of attributes
+* Single Type
+* one or more namespaces
+* One or more base classes
+
+
+::
+
+    ClassName()
+    ClassName().__init__()
+    
+::
+
+    Class Num(object):
+        
+        def __init__(self, amount):
+            self.amount = amount
+            
+        def add(self, value):
+            return self.amount + value
+            
+
+
+    
 
 
 
