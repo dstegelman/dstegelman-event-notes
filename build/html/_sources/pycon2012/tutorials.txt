@@ -49,7 +49,7 @@ Namespace Search Order
 * Local names
 * Namespaces of encolsing function, search starting with the nearst closing scope
 
-Excersise::
+Exercise::
 
     locals().keys()
     globals().keys()
@@ -75,6 +75,47 @@ When you make an assignment you are just assigning a second name (alias) to the 
     
 * __init__.py required for modules
 
+Functions
+---------
 
+* You can add arbitrary attributes to functions
+* Passing in a dictionary as an argument
+
+::
+
+    >>> def f(a1, a2, kw1='k1', kw2='k2'):
+    ...     print(repr((a1, a2, kw1, kw2)))
+    ... 
+    >>> f(1)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: f() takes at least 2 arguments (1 given)
+    >>> f(1, 2)
+    (1, 2, 'k1', 'k2')
+    >>> f(1, 2, 3)
+    (1, 2, 3, 'k2')
+    >>> t = 1, 2
+    >>> t
+    (1, 2)
+    >>> d = dict(kw1=3, kw2=4)
+    >>> d
+    {'kw1': 3, 'kw2': 4}
+    >>> f(*t)
+    (1, 2, 'k1', 'k2')
+    >>> f(**d)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: f() takes at least 2 non-keyword arguments (0 given)
+    >>> f(1, 2, **d)
+    (1, 2, 3, 4)
+    
+    
+Another example::
+
+    >>> name = 'Dad'
+    >>> 'Hi {name}'.format(**locals())
+    'Hi Dad'
+
+    
 
 
