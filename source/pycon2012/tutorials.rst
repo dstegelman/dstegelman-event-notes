@@ -38,6 +38,20 @@ Python Objects and Vars
 
 * When lists are appened IDs do not change, strings do.
 * Can't set attributes of built in types.
+* IDs match because there only needs to be one actual object in memory
+
+Namespaces
+----------
+
+* _namespace['s] - Directly accessble namespace
+* indirect, using dot notation dict.__doc__ or sys.version.major
+
+Namespace Search Order
+----------------------
+
+* Local names
+* Namespaces of encolsing function, search starting with the nearst closing scope
+
 
 
 
