@@ -15,8 +15,7 @@ Introduction
 * Type is checked at run time, not typed at compile time.  It is a dynamic language
 * Compiler allocates memory.
 * In python creates types and assigns names to them (not variables)
-
-** These are references to other objects not actual objects themselves.
+* These are references to other objects not actual objects themselves.
 * Names are implemented like ditionaries
 
 
@@ -58,6 +57,23 @@ Excersise::
     locals() is globals()
 
 In this case locals() is globals()
+
+
+Namespace Changes
+-----------------
+
+* assignment
+* del
+* (globals() and locals())
+* import 
+* def
+* class
+
+When you make an assignment you are just assigning a second name (alias) to the original function::
+
+    from pprint import pprint as pprint_function
+    
+* __init__.py required for modules
 
 
 

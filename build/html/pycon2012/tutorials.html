@@ -62,9 +62,9 @@
 <li>Type is checked at run time, not typed at compile time.  It is a dynamic language</li>
 <li>Compiler allocates memory.</li>
 <li>In python creates types and assigns names to them (not variables)</li>
+<li>These are references to other objects not actual objects themselves.</li>
+<li>Names are implemented like ditionaries</li>
 </ul>
-<p>** These are references to other objects not actual objects themselves.
-* Names are implemented like ditionaries</p>
 </div>
 <div class="section" id="dictionaries-and-namespaces">
 <h2>Dictionaries and Namespaces<a class="headerlink" href="#dictionaries-and-namespaces" title="Permalink to this headline">¶</a></h2>
@@ -106,6 +106,24 @@
 </div>
 <p>In this case locals() is globals()</p>
 </div>
+<div class="section" id="namespace-changes">
+<h3>Namespace Changes<a class="headerlink" href="#namespace-changes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>assignment</li>
+<li>del</li>
+<li>(globals() and locals())</li>
+<li>import</li>
+<li>def</li>
+<li>class</li>
+</ul>
+<p>When you make an assignment you are just assigning a second name (alias) to the original function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span> <span class="k">as</span> <span class="n">pprint_function</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>__init__.py required for modules</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -123,6 +141,7 @@
 <li><a class="reference internal" href="#python-objects-and-vars">Python Objects and Vars</a></li>
 <li><a class="reference internal" href="#namespaces">Namespaces</a></li>
 <li><a class="reference internal" href="#namespace-search-order">Namespace Search Order</a></li>
+<li><a class="reference internal" href="#namespace-changes">Namespace Changes</a></li>
 </ul>
 </li>
 </ul>
