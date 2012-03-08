@@ -192,6 +192,23 @@
     def add(self, value):
         return self.amount + value</pre>
 </div>
+<ul class="simple">
+<li>You can add a method as an attribute of a class by simply assigning it.</li>
+<li><tt class="docutils literal"><span class="pre">is</span></tt> comparison has been helpful</li>
+</ul>
+<div class="highlight-python"><pre>Class Prefixer(object):
+
+    def __init__(self, prefix):
+        self.prefix = prefix
+
+    def prepend(self, listing):
+        for l in listing:
+            l = l + self.prefix</pre>
+</div>
+<ul class="simple">
+<li>Need to brush up on some basic python iterators, loops, etc.</li>
+<li>Metaclasses</li>
+</ul>
 </div>
 </div>
 </div>

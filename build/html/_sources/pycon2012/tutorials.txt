@@ -149,7 +149,22 @@ Class Statement
         def add(self, value):
             return self.amount + value
             
+* You can add a method as an attribute of a class by simply assigning it.
+* ``is`` comparison has been helpful 
 
+::
+
+    Class Prefixer(object):
+    
+        def __init__(self, prefix):
+            self.prefix = prefix
+    
+        def prepend(self, listing):
+            for l in listing:
+                l = l + self.prefix
+            
+* Need to brush up on some basic python iterators, loops, etc.
+* Metaclasses
 
     
 
