@@ -36,4 +36,8 @@ Python Objects and Vars
 ** one or more base classes
 
 
+* When lists are appened IDs do not change, strings do.
+* Can't set attributes of built in types.
+
+
 
