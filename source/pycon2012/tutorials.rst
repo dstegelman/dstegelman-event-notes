@@ -20,8 +20,11 @@ Introduction
 * Names are implemented like ditionaries
 
 
+Dictionaries and Namespaces
+===========================
+
 Python Objects and Vars
-=======================
+-----------------------
 
 *Things like a = 17 are essentially dictionaries.  These are added to ``object land``.
 * Python object has:
@@ -30,5 +33,7 @@ Python Objects and Vars
 ** some number of attributes
 ** single ID
 ** zero or one or more names in one or more namespaces
+** one or more base classes
+
 
 
