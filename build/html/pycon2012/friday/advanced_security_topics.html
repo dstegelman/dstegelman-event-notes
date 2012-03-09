@@ -25,7 +25,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="Conference Notes and Best Practices 1.0 documentation" href="../../index.html" /> 
+    <link rel="top" title="Conference Notes and Best Practices 1.0 documentation" href="../../index.html" />
+    <link rel="next" title="Interfaces and Python" href="interfaces_and_python.html" />
+    <link rel="prev" title="Stop Writing Classes" href="stop_writing_classes.html" /> 
   </head>
   <body>
     <div class="related">
@@ -34,6 +36,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="interfaces_and_python.html" title="Interfaces and Python"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="stop_writing_classes.html" title="Stop Writing Classes"
+             accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -45,8 +53,6 @@
             
   <div class="section" id="advanced-security-topics">
 <h1>Advanced Security Topics<a class="headerlink" href="#advanced-security-topics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction-to-metaclasses">
-<h2>Introduction to Metaclasses<a class="headerlink" href="#introduction-to-metaclasses" title="Permalink to this headline">¶</a></h2>
 <p><strong>Presenter:</strong> Paul McMillan</p>
 <p><strong>Track:</strong> II</p>
 <p><strong>Description:</strong></p>
@@ -54,6 +60,63 @@
 <div><p>If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.</p>
 <p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/467/">https://us.pycon.org/2012/schedule/presentation/467/</a></p>
 </div></blockquote>
+<div class="section" id="hasing-and-encryption">
+<h2>Hasing and Encryption<a class="headerlink" href="#hasing-and-encryption" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>MD5, SHA1, SHA256</li>
+<li>If you are typing md5 you are doing it wrong</li>
+<li>Did this file get corrupted?</li>
+<li>Use has for Message signing.</li>
+<li>It is hard to generate a file that duplicates your stored hash.</li>
+<li>Use HMAC for message signing.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">hash</span><span class="p">(</span><span class="n">secret</span> <span class="o">+</span> <span class="nb">hash</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Salt your secret key</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">salt</span> <span class="o">=</span> <span class="s">&#39;session_cookie_signing&#39;</span>
+<span class="n">hmac</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">salt</span> <span class="o">+</span> <span class="n">secret_key</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>When using has algorithims do not use MD5.</li>
+<li>SHA1 is better, but use SHA256</li>
+<li>Web could use SHA512 as its not 32 bit.</li>
+</ul>
+<div class="section" id="why-need-encryption">
+<h3>Why Need Encryption<a class="headerlink" href="#why-need-encryption" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Do not implement yourself.</li>
+<li>Use SSL/TLS</li>
+</ul>
+</div>
+</div>
+<div class="section" id="random-numbers">
+<h2>Random Numbers<a class="headerlink" href="#random-numbers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Default random number is predictable.</li>
+<li>Use <tt class="docutils literal"><span class="pre">SystemRandom()</span></tt> instead</li>
+</ul>
+<div class="highlight-python"><pre>from random import SystemRandom()</pre>
+</div>
+</div>
+<div class="section" id="timing-attacks">
+<h2>Timing attacks<a class="headerlink" href="#timing-attacks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>String comparison does not compare the entire string at once.</li>
+<li>Not safe</li>
+<li>Compare the length first</li>
+<li>Compare different sets of characters, even if the previous ones worked.</li>
+</ul>
+</div>
+<div class="section" id="pickle">
+<h2>Pickle<a class="headerlink" href="#pickle" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Do not put data straight into pickle.</li>
+<li>Use JSON for untrusted data</li>
+</ul>
 </div>
 </div>
 
@@ -66,11 +129,23 @@
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Advanced Security Topics</a><ul>
-<li><a class="reference internal" href="#introduction-to-metaclasses">Introduction to Metaclasses</a></li>
+<li><a class="reference internal" href="#hasing-and-encryption">Hasing and Encryption</a><ul>
+<li><a class="reference internal" href="#why-need-encryption">Why Need Encryption</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#random-numbers">Random Numbers</a></li>
+<li><a class="reference internal" href="#timing-attacks">Timing attacks</a></li>
+<li><a class="reference internal" href="#pickle">Pickle</a></li>
 </ul>
 </li>
 </ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="stop_writing_classes.html"
+                        title="previous chapter">Stop Writing Classes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="interfaces_and_python.html"
+                        title="next chapter">Interfaces and Python</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/pycon2012/friday/advanced_security_topics.txt"
@@ -99,6 +174,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="interfaces_and_python.html" title="Interfaces and Python"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="stop_writing_classes.html" title="Stop Writing Classes"
+             >previous</a> |</li>
         <li><a href="../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
