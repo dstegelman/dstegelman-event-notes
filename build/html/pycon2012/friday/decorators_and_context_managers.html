@@ -60,6 +60,55 @@
 <div><p>Learn how decorators and context managers work, see several popular examples, and get a brief intro to writing your own. Decorators wrap your functions to easily add more functionality. Context managers use the &#8216;with&#8217; statement to make indented blocks magical. Both are very powerful parts of the python language; come learn how to use them in your code.</p>
 <p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/131/">https://us.pycon.org/2012/schedule/presentation/131/</a></p>
 </div></blockquote>
+<div class="section" id="decorators">
+<h2>Decorators<a class="headerlink" href="#decorators" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Pass functions to other functions</li>
+<li>Example</li>
+</ul>
+<div class="highlight-python"><pre>@property</pre>
+</div>
+<p>Instead of</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">var</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">method</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">expose</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="n">func</span><span class="o">.</span><span class="n">exposed</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="k">return</span> <span class="n">func</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Do this:</li>
+</ul>
+<div class="highlight-python"><pre>@expose("template.html")</pre>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">expose</span><span class="p">(</span><span class="n">template</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">mark_exposed</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">func</span>
+<span class="k">return</span> <span class="n">mark_exposed</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Decorators replace the original function in memory.</li>
+<li>Decorator for decorators</li>
+<li>Allows you to not nest methods</li>
+<li>Classes can be decorators</li>
+<li>Decorators can be placed on classes</li>
+<li>&#64;classmethod decorator</li>
+<li>Restrict.post or something</li>
+</ul>
+<div class="highlight-python"><pre>pip install decorator</pre>
+</div>
+</div>
+<div class="section" id="context-managers">
+<h2>Context Managers<a class="headerlink" href="#context-managers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>__enter__ and __exit__ methods</li>
+<li>&#64;contextlib.contextmanager</li>
+<li>contextlib</li>
+</ul>
+<p><a class="reference external" href="http://speakerdeck.com/u/brondsem">http://speakerdeck.com/u/brondsem</a></p>
+</div>
 </div>
 
 
@@ -68,6 +117,15 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Decorators and Context Managers</a><ul>
+<li><a class="reference internal" href="#decorators">Decorators</a></li>
+<li><a class="reference internal" href="#context-managers">Context Managers</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="interfaces_and_python.html"
                         title="previous chapter">Interfaces and Python</a></p>
