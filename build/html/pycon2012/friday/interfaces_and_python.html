@@ -68,6 +68,100 @@
 <li>Adaption</li>
 <li>Static analysis</li>
 </ul>
+<div class="section" id="what-is-it">
+<h3>What is it<a class="headerlink" href="#what-is-it" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Communication</li>
+<li>Documentation</li>
+<li>Doc strings</li>
+<li>Comments</li>
+<li>Progromatic Interfaces</li>
+</ul>
+</div>
+<div class="section" id="what-is-it-in-python">
+<h3>What is it in Python<a class="headerlink" href="#what-is-it-in-python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Abstract base classes</li>
+<li>Protocols</li>
+<li>Build your own</li>
+</ul>
+</div>
+<div class="section" id="protocols">
+<h3>Protocols<a class="headerlink" href="#protocols" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>iterator</li>
+<li>context manager</li>
+<li>sequence</li>
+<li>descriptor</li>
+<li>No Validation is done to make sure they are following the protocol</li>
+</ul>
+</div>
+<div class="section" id="eafp-vs-lbyl">
+<h3>EAFP vs LBYL<a class="headerlink" href="#eafp-vs-lbyl" title="Permalink to this headline">¶</a></h3>
+<p><tt class="docutils literal"><span class="pre">It's</span> <span class="pre">easier</span> <span class="pre">to</span> <span class="pre">ask</span> <span class="pre">forgiveness</span> <span class="pre">than</span> <span class="pre">permission</span></tt></p>
+<p>Call it and worry about the failing later.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># EAFP</span>
+<span class="k">def</span> <span class="nf">is_dead</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">obj</span><span class="p">(</span><span class="s">&quot;only a flesh wound&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">MyError</span><span class="p">(</span><span class="s">&quot;expected a callable object&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">Look</span> <span class="pre">before</span> <span class="pre">you</span> <span class="pre">leap</span></tt></p>
+<p>Check a variable/method for something before you call it.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># LBYL</span>
+<span class="k">def</span> <span class="nf">is_dead</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s">&quot;__call__&quot;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">MyError</span><span class="p">(</span><span class="s">&quot;expected a callable object&quot;</span><span class="p">)</span>
+    <span class="n">obj</span><span class="p">(</span><span class="s">&quot;only a flesh wound&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="duck-typing">
+<h3>Duck-typing<a class="headerlink" href="#duck-typing" title="Permalink to this headline">¶</a></h3>
+<p><tt class="docutils literal"><span class="pre">polymorphism</span> <span class="pre">by</span> <span class="pre">capability</span></tt> vs <tt class="docutils literal"><span class="pre">polymorphism</span> <span class="pre">by</span> <span class="pre">type</span></tt></p>
+<p><tt class="docutils literal"><span class="pre">Requiring</span> <span class="pre">a</span> <span class="pre">specific</span> <span class="pre">interface</span> <span class="pre">instead</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">specific</span> <span class="pre">type.</span></tt></p>
+</div>
+</div>
+<div class="section" id="abstract-base-classes">
+<h2>Abstract Base Classes<a class="headerlink" href="#abstract-base-classes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="write-your-own">
+<h3>Write Your Own<a class="headerlink" href="#write-your-own" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>class Entree(metaclass=ABCMeta):
+
+    @abstractmethod
+    def with_spam(self):
+        """spam spam spam spam"""
+
+    @abstractproperty
+    def spamcontent(self):
+        """Lovely spam! Wonderful spam!"""</pre>
+</div>
+<ul class="simple">
+<li>Decorators make your methods Abstract.</li>
+<li>If a class has abstract methods then that class will be abstract.</li>
+</ul>
+</div>
+<div class="section" id="use-existing">
+<h3>Use Existing<a class="headerlink" href="#use-existing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Register an existing class as an implementation</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">MyDict</span><span class="p">(</span><span class="n">Mapping</span><span class="p">):</span> <span class="k">pass</span>
+<span class="gp">...</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">issubclass</span><span class="p">(</span><span class="n">MyDict</span><span class="p">,</span> <span class="n">Mapping</span><span class="p">)</span>
+<span class="go">True</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">MyDict</span><span class="p">(),</span> <span class="n">Mapping</span><span class="p">)</span>
+<span class="go">True</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">MyDict</span><span class="o">.</span><span class="n">__bases__</span>
+<span class="go">(&lt;class &#39;collections.abc.Mapping&#39;&gt;,)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -80,7 +174,19 @@
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Interfaces and Python</a><ul>
-<li><a class="reference internal" href="#object-interfaces">Object Interfaces</a></li>
+<li><a class="reference internal" href="#object-interfaces">Object Interfaces</a><ul>
+<li><a class="reference internal" href="#what-is-it">What is it</a></li>
+<li><a class="reference internal" href="#what-is-it-in-python">What is it in Python</a></li>
+<li><a class="reference internal" href="#protocols">Protocols</a></li>
+<li><a class="reference internal" href="#eafp-vs-lbyl">EAFP vs LBYL</a></li>
+<li><a class="reference internal" href="#duck-typing">Duck-typing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#abstract-base-classes">Abstract Base Classes</a><ul>
+<li><a class="reference internal" href="#write-your-own">Write Your Own</a></li>
+<li><a class="reference internal" href="#use-existing">Use Existing</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
