@@ -24,5 +24,9 @@ Friday
     :maxdepth: 2
     
     pycon2012/friday/stop_writing_classes
-    
+    pycon2012/friday/advanced_security_topics
+    pycon2012/friday/interfaces_and_python
+    pycon2012/friday/decorators_and_context_managers
+    pycon2012/friday/certainty 
+    pycon2012/friday/deployment   
 
