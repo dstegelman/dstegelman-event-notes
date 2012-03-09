@@ -54,7 +54,7 @@ Instead of
 * Allows you to not nest methods
 * Classes can be decorators
 * Decorators can be placed on classes
-* @classmethod decorator
+* @classmethod decorator - 
 * Restrict.post or something
 
 ::
