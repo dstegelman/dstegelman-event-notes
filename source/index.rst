@@ -11,14 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   pycon2012/tutorials
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   pycon2012/tutorials   
+   pycon2012/friday/introduction_to_metaclasses
+   pycon2012/friday/stop_writing_classes
+    
