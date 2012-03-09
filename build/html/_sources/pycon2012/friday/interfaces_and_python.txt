@@ -105,6 +105,8 @@ Write Your Own
             
 * Decorators make your methods Abstract.
 * If a class has abstract methods then that class will be abstract.
+* ABCMeta marks class as abstract
+
 
 Use Existing
 ------------
