@@ -2,9 +2,6 @@
 Interfaces and Python
 =====================
 
-Interfaces and Python
-=====================
-
 **Presenter:** Eric Snow
 
 **Track:** IV
@@ -14,4 +11,30 @@ Interfaces and Python
     In 2.6, Python introduced the Abstract Base Classes. Before that we had "protocols" (and we still do). In this talk we'll look at how the general concept of interfaces fits into today's Python. We'll also look at some of the alternate proposals of the past, some of the controversies around ABCs, and the direction interfaces might go in the future.
 
     https://us.pycon.org/2012/schedule/presentation/126/
+
+    http://goo.gl/hwkTy
+
+
+Object Interfaces
+=================
+
+* Code as documentation
+* Adaption
+* Static analysis
+
+What is it
+----------
+
+* Communication
+* Documentation
+* Doc strings
+* Comments
+* Progromatic Interfaces
+
+What is it in Python
+--------------------
+
+* Abstract base classes
+* Protocols
+* Build your own
 

@@ -2,8 +2,6 @@
 Decorators and Context Managers
 ===============================
 
-Decorators and Context Managers
-===============================
 
 **Presenter:** Dave Brondsema
 
