@@ -2,7 +2,7 @@
 Advanced Security Topics
 ========================
 
-**Presenter:** Paul McMillan
+**Presenter:** Paul McMillan - Django Security Developer
 
 **Track:** II
 
@@ -86,7 +86,7 @@ Am I Safe?
 * All these things require you to trust everyone on the internet
 * You ``must`` verify
 * Python doesn't make it easy to check SSL certs.
-
+* Consider using Crate.io
 
 
 

@@ -8,17 +8,19 @@ Schedule and Notes
 ==================
 
 
+Pycon 2012
+==========
+
 Tuts
-====
+----
 
 .. toctree::
     :maxdepth: 2
     
     pycon2012/tutorials
 
-
 Friday
-======
+------
 
 .. toctree::
     :maxdepth: 2
