@@ -3,15 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Conference Notes and Best Practices's documentation!
-===============================================================
+==================
+Schedule and Notes
+==================
 
-Contents:
+
+Tuts
+====
 
 .. toctree::
-   :maxdepth: 2
-   
-   pycon2012/tutorials   
-   pycon2012/friday/introduction_to_metaclasses
-   pycon2012/friday/stop_writing_classes
+    :maxdepth: 2
     
+    pycon2012/tutorials
+
+
+Friday
+======
+
+.. toctree::
+    :maxdepth: 2
+    
+    pycon2012/friday/stop_writing_classes
+    
+
