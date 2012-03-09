@@ -72,6 +72,21 @@ Pickle
 * Use JSON for untrusted data
 
 
+Always verify your assumptions
+==============================
+
+* PIP installing.
+* I trust django developers
+* I truse the people who wrote pip
+* PIP verifies MD5 hash
+
+Am I Safe?
+----------
+
+* All these things require you to trust everyone on the internet
+* You ``must`` verify
+* Python doesn't make it easy to check SSL certs.
+
 
 
 
