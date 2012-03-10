@@ -60,6 +60,78 @@
 <div><p>This talk will delve deep into advanced aspects of the Celery task queue and ecosystem. Previous experience with task queues and message oriented middleware is beneficial.</p>
 <p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/81/">https://us.pycon.org/2012/schedule/presentation/81/</a></p>
 </div></blockquote>
+<ul class="simple">
+<li>Lead Celery developer</li>
+<li>Task Queue</li>
+<li>Tasks are just dictionaries</li>
+<li>Subtasking</li>
+</ul>
+<div class="section" id="task-granularity">
+<h2>Task Granularity<a class="headerlink" href="#task-granularity" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Coarse-grained - More Computation</li>
+<li>Chunking can make very granular tasks good</li>
+<li>Chunks can use threads, reduce latency</li>
+</ul>
+</div>
+<div class="section" id="chords">
+<h2>Chords<a class="headerlink" href="#chords" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Synchronization Primitive</li>
+<li>Barrier</li>
+<li>Header is a taskset</li>
+<li>Body is applied with the results of the headers</li>
+<li>Native support for Redis and Memcached</li>
+</ul>
+<div class="section" id="consider-subtasking">
+<h3>Consider Subtasking<a class="headerlink" href="#consider-subtasking" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first last docutils">
+<dt>def smothing():</dt>
+<dd>subtask.delay()</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="blocking">
+<h2>Blocking<a class="headerlink" href="#blocking" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Bad</li>
+<li>Use timeouts and retry if possible to stalled tasks.</li>
+<li>Be smarter about routing.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">socket</span><span class="o">.</span><span class="n">settimeout</span><span class="p">()</span>
+<span class="n">socket</span><span class="o">.</span><span class="n">setdefaulttimeout</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Reroute tasks to machines/workers with free CPU</li>
+</ul>
+</div>
+<div class="section" id="cyme">
+<h2>Cyme<a class="headerlink" href="#cyme" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Cyme node is a branch</li>
+<li>No Master (Decentralized)</li>
+<li>Branches know neighbors</li>
+<li>API</li>
+</ul>
+<div class="section" id="api">
+<h3>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Create and manage</li>
+<li>Create worker instances</li>
+<li>Queues</li>
+<li>Configure workers</li>
+</ul>
+<div class="highlight-python"><pre>pip install cyme
+
+cyme-branc -D</pre>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -68,6 +140,23 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Advanced Celery</a><ul>
+<li><a class="reference internal" href="#task-granularity">Task Granularity</a></li>
+<li><a class="reference internal" href="#chords">Chords</a><ul>
+<li><a class="reference internal" href="#consider-subtasking">Consider Subtasking</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blocking">Blocking</a></li>
+<li><a class="reference internal" href="#cyme">Cyme</a><ul>
+<li><a class="reference internal" href="#api">API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="apis.html"
                         title="previous chapter">RESTful APIs With Tastypie</a></p>
