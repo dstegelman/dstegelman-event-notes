@@ -133,7 +133,7 @@ Getting Started
 * Gather some easy metrics
 * Automate deploys
 * Continueous deployment doesn't mean deploy all the time, it means deploy any time.
-
+* Consider the ramifications of schema changes. DO NOT DROP columns 
 
 
 
