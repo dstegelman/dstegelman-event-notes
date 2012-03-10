@@ -18,3 +18,17 @@ Friday
     friday/decorators_and_context_managers
     friday/certainty 
     friday/deployment
+    
+Saturday
+--------
+
+.. toctree::
+    :maxdepth: 2
+    
+    saturday/templating
+    saturday/forms
+    saturday/testing
+    saturday/server_bottlenecks
+    saturday/apis
+    saturday/celery
+    saturday/learn_java

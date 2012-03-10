@@ -32,3 +32,17 @@ Friday
     pycon2012/friday/certainty 
     pycon2012/friday/deployment   
 
+
+Saturday
+--------
+
+.. toctree::
+    :maxdepth: 2
+    
+    pycon2012/saturday/templating
+    pycon2012/saturday/forms
+    pycon2012/saturday/testing
+    pycon2012/saturday/server_bottlenecks
+    pycon2012/saturday/apis
+    pycon2012/saturday/celery
+    pycon2012/saturday/learn_java
