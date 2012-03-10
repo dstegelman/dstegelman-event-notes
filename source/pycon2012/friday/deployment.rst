@@ -3,9 +3,6 @@ Practicing Continuous Deployment
 ================================
 
 
-Decorators and Context Managers
-===============================
-
 **Presenter:** David Cramer
 
 **Track:** I
@@ -15,3 +12,5 @@ Decorators and Context Managers
     Practice iterative development like the pros. Release sooner, faster, and more often.
 
     https://us.pycon.org/2012/schedule/presentation/12/
+    
+    
