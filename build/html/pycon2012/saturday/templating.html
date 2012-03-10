@@ -59,7 +59,175 @@
 <blockquote>
 <div><p>Django&#8217;s template language is designed to strike a balance between power and ease of use; learn how to use this balance to create awesome looking websites. This talk will cover the basics and best practices of Django templating, from custom tag and filter creation, to the finer points of template rendering and loading, and even to replacing the default templating engine itself.</p>
 <p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/80/">https://us.pycon.org/2012/schedule/presentation/80/</a></p>
+<p><a class="reference external" href="http://www.xtine.net">http://www.xtine.net</a>
+&#64;plaidxtine</p>
 </div></blockquote>
+<div class="section" id="intro">
+<h2>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Front End Developer</li>
+<li>PyLadies!</li>
+<li>Introduction to Templating</li>
+<li>Effective use of Built In Tags</li>
+<li>Extending Templates</li>
+<li>Template Loading</li>
+<li>Extending Current Django Templating</li>
+</ul>
+</div>
+<div class="section" id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>This is the end user experience</li>
+<li>Balance between power and ease</li>
+<li>By Design it is seperated so that backend/front end can be developed seperately</li>
+<li>Start with a base template, and have pages inherit from it.</li>
+</ul>
+<div class="section" id="tools">
+<h3>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Syntax highlighting, autocompletion</li>
+<li>django-debug-toolbar</li>
+<li>Print out tag/filter reference guide.</li>
+</ul>
+</div>
+<div class="section" id="structure">
+<h3>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Root template folder, argues against seperate apps/templats</li>
+</ul>
+</div>
+</div>
+<div class="section" id="standards">
+<h2>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Consistent Spacing</li>
+<li>Put all loads at the top</li>
+<li>Use {% comment %} instead of &lt;!&#8211; Comment &#8211;&gt;</li>
+</ul>
+</div>
+<div class="section" id="common-blocks">
+<h2>Common Blocks<a class="headerlink" href="#common-blocks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Title</li>
+<li>Meta tags</li>
+<li>Extra_head</li>
+<li>Content</li>
+<li>Extra_JS</li>
+</ul>
+<div class="section" id="block-best-practices">
+<h3>Block Best Practices<a class="headerlink" href="#block-best-practices" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>End {% block title %} with {% endblock title %}</li>
+<li>Blocks cannot be repeated</li>
+<li>DOn&#8217;t over block, only write one if you need one.</li>
+<li>Use include {% include &#8220;snippet.html&#8221; %}</li>
+<li>Do not over use includes</li>
+</ul>
+</div>
+<div class="section" id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Modify objects with filters {{ var|filter }}</li>
+<li>loop through them useing tags</li>
+</ul>
+</div>
+<div class="section" id="security">
+<h3>Security<a class="headerlink" href="#security" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Make sure you sanitize data if you are using {% autoescape %}</li>
+</ul>
+</div>
+</div>
+<div class="section" id="general-best-practices">
+<h2>General Best Practices<a class="headerlink" href="#general-best-practices" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Name URLs</li>
+<li>Do not hard code static</li>
+<li>Django-floppyforms (html5)</li>
+<li>django-crispy-forms - More semantic forms</li>
+<li>{% include form.html %}</li>
+<li>Use {{ form.as_ul }}</li>
+<li>Firstof tag, removing un-necssary if statements</li>
+<li>Custom tags live in application module</li>
+<li>Write simple, basic filters</li>
+</ul>
+</div>
+<div class="section" id="example-custom-tag">
+<h2>Example Custom Tag<a class="headerlink" href="#example-custom-tag" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">template</span>
+<span class="n">register</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">Library</span><span class="p">()</span>
+
+<span class="nd">@register.filter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">&quot;remove&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">cut</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">argument</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">argument</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="other-types-of-tags">
+<h3>Other Types of Tags<a class="headerlink" href="#other-types-of-tags" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>@register.simple_tag
+
+@register.tag(name="current_time")</pre>
+</div>
+<ul class="simple">
+<li>django-templatag-sugar</li>
+<li>django-classy-tags - Class based template tags</li>
+</ul>
+</div>
+<div class="section" id="do-not">
+<h3>Do Not<a class="headerlink" href="#do-not" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Application logic</li>
+<li>Dangerous, Difficult to support</li>
+<li>Do not replicate python logic in the templates</li>
+</ul>
+</div>
+</div>
+<div class="section" id="loading-and-changing-templates-loaders">
+<h2>Loading and Changing Templates/Loaders<a class="headerlink" href="#loading-and-changing-templates-loaders" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Template Loaders</li>
+</ul>
+<div class="section" id="replacing-the-template-engine">
+<h3>Replacing the Template Engine<a class="headerlink" href="#replacing-the-template-engine" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Jinga2, Mako, Cheetah</li>
+<li>Django is a bit slower</li>
+<li>Different logic control and handling</li>
+<li>Lots of risk switching becuase you are separting django from its template engine.</li>
+</ul>
+</div>
+<div class="section" id="jinja">
+<h3>Jinja<a class="headerlink" href="#jinja" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Functions callable from templates</li>
+<li>Loop controls</li>
+<li>Multiple filter arguments</li>
+<li>Performace Increase</li>
+<li>More dependencies</li>
+<li>Lose built-in support</li>
+<li>Too much logic in your templates</li>
+<li>Speed increase is minimal</li>
+</ul>
+</div>
+<div class="section" id="speeding-up-templates">
+<h3>Speeding Up Templates<a class="headerlink" href="#speeding-up-templates" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Cache -Django-template-preprocessor</li>
+<li>django-pancake - Flatten template files</li>
+<li>Remember other bottlenecks (Cache, load balancing)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="new-in-1-4">
+<h2>New in 1.4<a class="headerlink" href="#new-in-1-4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Custom project and App templates</li>
+<li>Startapp/start project</li>
+<li>Combine with your favorite boilerplate</li>
+<li>{% elif %}</li>
+</ul>
+</div>
 </div>
 
 
@@ -68,6 +236,39 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Django Templating: More Than Just Blocks</a><ul>
+<li><a class="reference internal" href="#intro">Intro</a></li>
+<li><a class="reference internal" href="#basics">Basics</a><ul>
+<li><a class="reference internal" href="#tools">Tools</a></li>
+<li><a class="reference internal" href="#structure">Structure</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#standards">Standards</a></li>
+<li><a class="reference internal" href="#common-blocks">Common Blocks</a><ul>
+<li><a class="reference internal" href="#block-best-practices">Block Best Practices</a></li>
+<li><a class="reference internal" href="#variables">Variables</a></li>
+<li><a class="reference internal" href="#security">Security</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#general-best-practices">General Best Practices</a></li>
+<li><a class="reference internal" href="#example-custom-tag">Example Custom Tag</a><ul>
+<li><a class="reference internal" href="#other-types-of-tags">Other Types of Tags</a></li>
+<li><a class="reference internal" href="#do-not">Do Not</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#loading-and-changing-templates-loaders">Loading and Changing Templates/Loaders</a><ul>
+<li><a class="reference internal" href="#replacing-the-template-engine">Replacing the Template Engine</a></li>
+<li><a class="reference internal" href="#jinja">Jinja</a></li>
+<li><a class="reference internal" href="#speeding-up-templates">Speeding Up Templates</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#new-in-1-4">New in 1.4</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="../friday/deployment.html"
                         title="previous chapter">Practicing Continuous Deployment</a></p>
