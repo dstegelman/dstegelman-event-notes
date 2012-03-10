@@ -32,3 +32,15 @@ Saturday
     saturday/apis
     saturday/celery
     saturday/learn_java
+    
+Sunday
+------
+
+.. toctree::
+    :maxdepth: 2
+    
+    sunday/sketching
+    sunday/improve_docs
+    sunday/whats_new
+    
+    

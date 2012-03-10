@@ -46,3 +46,15 @@ Saturday
     pycon2012/saturday/apis
     pycon2012/saturday/celery
     pycon2012/saturday/learn_java
+    
+Sunday
+------
+
+.. toctree::
+    :maxdepth: 2
+    
+    pycon2012/sunday/sketching
+    pycon2012/sunday/improve_docs
+    pycon2012/sunday/whats_new
+    
+
