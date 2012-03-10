@@ -14,7 +14,8 @@ Advanced Celery
 
     https://us.pycon.org/2012/schedule/presentation/81/
     
-    
+Introduction
+============
 
 * Lead Celery developer
 * Task Queue
@@ -74,6 +75,7 @@ API
 * Create worker instances
 * Queues
 * Configure workers
+* Autoscaling
 
 
 ::
