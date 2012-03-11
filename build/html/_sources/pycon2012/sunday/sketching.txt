@@ -56,6 +56,10 @@ Tools
 * Pen/Markers
 * Wall to display them, visible
 * Iteration
+* iPad
+* Penultimate
+* Cosmonaut
+* iPad resolution isn't as good as real paper
 
 
 37 Signals
@@ -77,6 +81,14 @@ Images
 
 * Represent a box with an X
 * Fill in
+
+
+Technique
+=========
+
+* Drawing a straight line is hard
+* Try rotating page if you can't draw in one direction
+* Ruler for more professional sketching
 
 Notes
 =====
