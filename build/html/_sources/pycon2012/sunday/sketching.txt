@@ -18,7 +18,17 @@ Sketching a Better Product
 
 
 
+Intro
+=====
 
+* Django's BDFL Designer
+
+Sketching is not drawing
+========================
+
+* Skethcing is a tool taht serves a purpose
+* Drawing is art, serves itself
+* Sketching is for ideas as drafts are to writing
 
 
 
