@@ -22,6 +22,7 @@ Intro
 =====
 
 * Django's BDFL Designer
+* Skillsapp.com
 
 Sketching is not drawing
 ========================
@@ -29,8 +30,59 @@ Sketching is not drawing
 * Skethcing is a tool taht serves a purpose
 * Drawing is art, serves itself
 * Sketching is for ideas as drafts are to writing
+* Different parts of brain used to process designs, look, feel.
+* Act of getting ideas out and bak in.
+
+Sketches Should Be
+==================
+
+* Cheap, Try different Ideas, No guilt to throwing away
+* Fast, quick to create, low resolution
+* Less detail
+* Ugly, communicate unfinished product
+
+Design Funnel
+=============
+
+* Start out wide in scope and ideas
+* As project progresses, iterate, and get more narrow
+* Sketches lead to prototype
+* Waste less time
+
+Tools
+=====
+
+* Paper
+* Pen/Markers
+* Wall to display them, visible
+* Iteration
 
 
+37 Signals
+----------
+
+* Use two fat markers, black and red.
+* Epicenter Design, sketch the core of the layout or design
+
+How to Sketch
+=============
+
+* Draw lines
+* Boxes
+* And that is it.
+* Greeked Text
+
+Images
+------
+
+* Represent a box with an X
+* Fill in
+
+Notes
+=====
+
+* Stencils
+* Sketch the Iconic Thing
 
 
 
