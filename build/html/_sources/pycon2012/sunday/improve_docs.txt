@@ -74,6 +74,43 @@ Django Tutorial Runthrough
 * Idea of code reuse.
 * No real discussion of test-driven development
 * What is tests.py used for?
+* Schema migrations - no talk of South
+* How to style forms
+* Static and Media files - not explained in the tutorial
+* Template inheritance
+* Deployment
+
+
+Target Audience Chnage
+----------------------
+
+* Build a community or a library
+* If you want a long running project and a community you'll need longer, more complete tutorial
+* Example: Railsbridge, PyStar.org
+* Comprehensive tutorials are longer, takes more time.
+* Modular structure can make this easier
+* Blind searching is hard, put linke in your docs instead
+* Better doc, "Intro to web programming using Django"
+
+
+Issues
+======
+
+* Assuming familiarity with base
+* Unstated assumptions
+* List of directions withou why
+* Code samples
+* No obvious place for help
+
+Better Docs
+-----------
+
+* Remember you were a novice once
+* Realize your own expertise
+* Have a user test your docs
+* Announce audience
+* Explicit Dependencies
+* Different tutorials for different audiences
 
 
 
