@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Django Form Processing Deep Dive &mdash; Conference Notes and Best Practices 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="django-form-processing-deep-dive">
+<h1>Django Form Processing Deep Dive<a class="headerlink" href="#django-form-processing-deep-dive" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong> Nathan Yergler</p>
+<p><strong>Track:</strong> V</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<div><p>Django Form processing often takes a back seat to flashier, more visible parts of the framework. But Django forms, fully leveraged, can help developers be more productive and write more cohesive code. This talk will dive deep into the stock Django forms package, as well as discuss a strategy for abstracting validation for forms, and the use of unit and integration tests with forms.</p>
+<p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/420/">https://us.pycon.org/2012/schedule/presentation/420/</a></p>
+<p><a class="reference external" href="http://yergler.net/2012/pycon-forms">http://yergler.net/2012/pycon-forms</a></p>
+</div></blockquote>
+<div class="section" id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="forms-in-context">
+<h3>Forms in Context<a class="headerlink" href="#forms-in-context" title="Permalink to this headline">¶</a></h3>
+<p>VIews - Convert request to response
+forms = Conert input to python objects
+models - Data and business logic</p>
+</div>
+<div class="section" id="forms">
+<h3>Forms<a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Forms are composed of fields, which have a widget</li>
+<li>Ubound forms dont have data associated with them but can be rendered</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">form</span><span class="o">=</span> <span class="n">ContactForm</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>bound forms have specifid data assoicated which can be validated, can be any dict of data</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">form</span> <span class="o">=</span> <span class="n">ContactForm</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Two ways to access fields</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">form</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span>
+<span class="c">#Field Object</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">form</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span>
+<span class="c"># outputs html widget</span>
+</pre></div>
+</div>
+<p>Forms can be given initial data</p>
+</div>
+</div>
+<div class="section" id="validation">
+<h2>Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Only bound forms can be valided</li>
+<li>Fields are validated, then the form itself</li>
+<li>Validation, then cleaning</li>
+<li>Validation Error</li>
+</ul>
+<div class="section" id="field-cleaning">
+<h3>Field Cleaning<a class="headerlink" href="#field-cleaning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>To PYthon, Validation, Cleaning</li>
+<li>.clean_fieldname() method is called after validators</li>
+<li>already converted to python</li>
+<li>methods <tt class="docutils literal"><span class="pre">must</span></tt> return a clean value</li>
+</ul>
+<div class="highlight-python"><pre>def clean_email(self):
+    if (self.cleaned)data.get('email', '').endswith('hotmail.com'))::
+        raise ValidationError()
+
+    return self.cleaned_data.get('email', '')</pre>
+</div>
+<ul class="simple">
+<li>Using get is safer if not a required field.</li>
+</ul>
+</div>
+<div class="section" id="form-validation">
+<h3>Form Validation<a class="headerlink" href="#form-validation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>.clean</li>
+<li>Called even if errors raised by fields</li>
+<li>Must return the cleaned data dictionary</li>
+<li>Initial data != default data</li>
+<li>Defaults for non-required fields should be specified when accessing the dict.</li>
+</ul>
+</div>
+<div class="section" id="changes">
+<h3>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>form.has_changed()</li>
+<li>form.changed_fields</li>
+</ul>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Remember whats forms are for</li>
+<li>Testing intial states, field validation, final state of cleaned data</li>
+</ul>
+<div class="highlight-python"><pre>class FormTests(TestCase):
+    def test_validation(self):
+        form_data = {
+        'name': 'x" * 300,
+        }
+
+        form = ContactForm(data=form_data)
+        self.assertFalse(form.is_valid())</pre>
+</div>
+<ul class="simple">
+<li>Rebar, open source. Couldn&#8217;t find the link.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">rebar</span> <span class="kn">import</span> <span class="n">flatten_to_dict</span>
+
+<span class="n">form_data</span> <span class="o">=</span> <span class="n">flatten_to_dict</span><span class="p">(</span><span class="n">ContactForm</span><span class="p">())</span>
+<span class="n">form_data</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+    <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;x&#39;</span> <span class="o">*</span> <span class="mi">300</span><span class="p">,</span>
+    <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rendering-forms">
+<h2>Rendering Forms<a class="headerlink" href="#rendering-forms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Class based views with forms is excellent</li>
+</ul>
+<div class="section" id="form-output">
+<h3>Form Output<a class="headerlink" href="#form-output" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>as_p()</li>
+<li>as_ul()</li>
+<li>as_table()</li>
+<li>field.label</li>
+<li>field.label_tag</li>
+<li>field.html_id</li>
+<li>field.help_text</li>
+<li>field.errors</li>
+<li>required_css_class</li>
+<li>error_css_class</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">name</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">error_messages</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;required&#39;</span><span class="p">:</span> <span class="s">&#39;something&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="error-class">
+<h3>Error Class<a class="headerlink" href="#error-class" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Error list is used as &lt;ul&gt;</li>
+<li>Specify the error_class kwarg</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.forms.util</span> <span class="kn">import</span> <span class="n">ErrorList</span>
+
+<span class="n">form</span> <span class="o">=</span> <span class="n">ContactForm</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">error_class</span><span class="o">=</span><span class="n">ErrorListClass</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Avoid name collisions with prefix</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">contact_form</span> <span class="o">=</span> <span class="n">ContactForm</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s">&quot;contact&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="other-notes">
+<h2>Other Notes<a class="headerlink" href="#other-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Model forms have an additional method, <tt class="docutils literal"><span class="pre">_post_clean()</span></tt></li>
+<li>FormSets to put many of the same form on the same page</li>
+<li>Same validation structure</li>
+<li><a class="reference external" href="http://yergler.net/2012/pycon-forms">http://yergler.net/2012/pycon-forms</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Django Form Processing Deep Dive</a><ul>
+<li><a class="reference internal" href="#basics">Basics</a><ul>
+<li><a class="reference internal" href="#forms-in-context">Forms in Context</a></li>
+<li><a class="reference internal" href="#forms">Forms</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#validation">Validation</a><ul>
+<li><a class="reference internal" href="#field-cleaning">Field Cleaning</a></li>
+<li><a class="reference internal" href="#form-validation">Form Validation</a></li>
+<li><a class="reference internal" href="#changes">Changes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+<li><a class="reference internal" href="#rendering-forms">Rendering Forms</a><ul>
+<li><a class="reference internal" href="#form-output">Form Output</a></li>
+<li><a class="reference internal" href="#error-class">Error Class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-notes">Other Notes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/conferences/pycon2012/saturday/forms.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Derek Stegelman.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
