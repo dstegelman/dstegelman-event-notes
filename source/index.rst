@@ -14,12 +14,13 @@ Notes
 =====
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     notes/django/django_resources
     notes/django/django_snippets
     notes/django/django_class_views
     notes/python/python_resources
+    notes/django/testing/selenium
 
 
 Conferences

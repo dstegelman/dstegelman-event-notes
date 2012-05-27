@@ -12,6 +12,7 @@ Common Libraries
 - boto
 - MySQL extensions
 - django-taggit
+- factory_boy
 
 Talks/Learning
 --------------
