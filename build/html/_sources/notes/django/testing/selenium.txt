@@ -26,7 +26,7 @@ Create a new Test case::
         def tearDown(self):
             self.browser.quit()
             
-        def test_mentor_login_no_mentor(self):
+        def test_something(self):
             
             self.browser.get(self.live_server_url)
             self.browser.find_element_by_id('clickme').click()
