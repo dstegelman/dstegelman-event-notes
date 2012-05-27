@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -8,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Schedule and Notes &mdash; Conference Notes and Best Practices 1.0 documentation</title>
+    <title>Conferences and Notes &mdash; Conference Notes and Best Practices 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,46 +25,90 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Conference Notes and Best Practices 1.0 documentation" href="#" />
-    <link rel="next" title="Django Resources" href="notes/django_resources.html" /> 
+    <link rel="next" title="Django Resources" href="notes/django/django_resources.html" />
+ 
+<script type="text/javascript" src="templatebuiltins.js"></script>
+<script type="text/javascript">
+(function($) {
+    if (!django_template_builtins) {
+       // templatebuiltins.js missing, do nothing.
+       return;
+    }
+    $(document).ready(function() {
+        // Hyperlink Django template tags and filters
+        var base = "ref/templates/builtins.html";
+        if (base == "#") {
+            // Special case for builtins.html itself
+            base = "";
+        }
+        // Tags are keywords, class '.k'
+        $("div.highlight\\-html\\+django span.k").each(function(i, elem) {
+             var tagname = $(elem).text();
+             if ($.inArray(tagname, django_template_builtins.ttags) != -1) {
+                 var fragment = tagname.replace(/_/, '-');
+                 $(elem).html("<a href='" + base + "#" + fragment + "'>" + tagname + "</a>");
+             }
+        });
+        // Filters are functions, class '.nf'
+        $("div.highlight\\-html\\+django span.nf").each(function(i, elem) {
+             var filtername = $(elem).text();
+             if ($.inArray(filtername, django_template_builtins.tfilters) != -1) {
+                 var fragment = filtername.replace(/_/, '-');
+                 $(elem).html("<a href='" + base + "#" + fragment + "'>" + filtername + "</a>");
+             }
+        });
+    });
+})(jQuery);
+</script>
+
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="notes/django_resources.html" title="Django Resources"
-             accesskey="N">next</a> |</li>
-        <li><a href="#">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
 
     <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
+  <div id="custom-doc" class="">
+    <div id="hd">
+      <h1><a href="#">Conference Notes and Best Practices 1.0 documentation</a></h1>
+      <div id="global-nav">
+        <a title="Home page" href="#">Home</a>  |
+        <a title="Table of contents" href="contents.html">Table of contents</a>  |
+        <a title="Global index" href="genindex.html">Index</a>  |
+        <a title="Module index" href="py-modindex.html">Modules</a>
+      </div>
+      <div class="nav">
+    <a title="Conference Notes and Best Practices 1.0 documentation" href="#" accesskey="U">up</a>
+   |
+    <a href="notes/django/django_resources.html" title="Django Resources">next</a> &raquo;</div>
+    </div>
+    
+    <div id="bd">
+      <div id="yui-main">
+        <div class="yui-b">
+          <div class="yui-g" id="index">
             
-  <div class="section" id="schedule-and-notes">
-<h1>Schedule and Notes<a class="headerlink" href="#schedule-and-notes" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="conferences-and-notes">
+<h1>Conferences and Notes<a class="headerlink" href="#conferences-and-notes" title="Permalink to this headline">¶</a></h1>
+<p>Below is my collection of notes on general Django/Python development as well as conference and meet up notes.</p>
 <div class="section" id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="notes/django_resources.html">Django Resources</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notes/django_resources.html#common-libraries">Common Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notes/django_resources.html#talks-learning">Talks/Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/django/django_resources.html">Django Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes/django/django_resources.html#common-libraries">Common Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes/django/django_resources.html#talks-learning">Talks/Learning</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="notes/django_snippets.html">Django Snippets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notes/django_snippets.html#pagination">Pagination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/django/django_snippets.html">Django Snippets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes/django/django_snippets.html#pagination">Pagination</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="notes/django_class_views.html">Django Class Based Views</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notes/python_resources.html">Python Resources</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notes/python_resources.html#libraries">Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notes/python_resources.html#learning">Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/django/django_class_views.html">Django Class Based Views</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes/django/django_class_views.html#views">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes/django/django_class_views.html#urls">Urls</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notes/python/python_resources.html">Python Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes/python/python_resources.html#libraries">Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes/python/python_resources.html#learning">Learning</a></li>
 </ul>
 </li>
 </ul>
@@ -85,64 +128,23 @@
 </div>
 
 
-          </div>
+          </div>         
         </div>
       </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Schedule and Notes</a><ul>
-<li><a class="reference internal" href="#notes">Notes</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#conferences">Conferences</a><ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+      
+        
+      
+    </div>
+    
+    <div id="ft">
+      <div class="nav">
+    <a title="Conference Notes and Best Practices 1.0 documentation" href="#" accesskey="U">up</a>
+   |
+    <a href="notes/django/django_resources.html" title="Django Resources">next</a> &raquo;</div>
+    </div>
+  </div>
 
-  <h4>Next topic</h4>
-  <p class="topless"><a href="notes/django_resources.html"
-                        title="next chapter">Django Resources</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/index.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
       <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="notes/django_resources.html" title="Django Resources"
-             >next</a> |</li>
-        <li><a href="#">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-        &copy; Copyright 2012, Derek Stegelman.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

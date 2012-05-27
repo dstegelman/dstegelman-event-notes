@@ -3,9 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==================
-Schedule and Notes
-==================
+=====================
+Conferences and Notes
+=====================
+
+Below is my collection of notes on general Django/Python development as well as conference and meet up notes.  
 
 
 Notes
@@ -14,10 +16,10 @@ Notes
 .. toctree::
     :maxdepth: 2
     
-    notes/django_resources
-    notes/django_snippets
-    notes/django_class_views
-    notes/python_resources
+    notes/django/django_resources
+    notes/django/django_snippets
+    notes/django/django_class_views
+    notes/python/python_resources
 
 
 Conferences
