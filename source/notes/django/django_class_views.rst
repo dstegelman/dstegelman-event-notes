@@ -43,3 +43,36 @@ Urls::
         url(r'^posts/$', PostListView.as_view(), name="post_list_view"),
         url(r'^posts/(?P<slug>[-\w]+)/$', PostDetailView.as_view(), name="post_detail"),
     )
+
+Mixins
+------
+
+Mixins can easily be added to class based views to extend and inherit common functionality::
+
+    from django.utils.decorators import method_decorator
+    from django.contrib.auth.decorators import login_required
+    from django.core.urlresolvers import reverse_lazy
+    from kstate.common.auth.decorators import group_required
+    STAFF_LOGIN = reverse_lazy("login")
+
+    class StaffRequiredMixin(object):
+        """
+        View mixin for the staff application.  Requires someone to be a staff member.
+
+        """
+
+        @method_decorator(login_required(login_url=STAFF_LOGIN))
+        @method_decorator(group_required("Staff"))
+        def dispatch(self, *args, **kwargs):
+            return super(StaffRequiredMixin, self).dispatch(*args, **kwargs)
+
+
+    class AdminRequiredMixin(object):
+        """
+        View mixin for staff app. Required admin group.
+        """
+
+        @method_decorator(login_required(login_url=STAFF_LOGIN))
+        @method_decorator(group_required("Admin"))
+        def dispatch(self, *args, **kwargs):
+            return super(AdminRequiredMixin, self).dispatch(*args, **kwargs)

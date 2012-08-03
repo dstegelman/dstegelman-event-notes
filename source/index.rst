@@ -27,7 +27,8 @@ Conferences
 ===========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
-    conferences/index    
+    conferences/pycon2012/index
+    conferences/djangocon2012/index
 

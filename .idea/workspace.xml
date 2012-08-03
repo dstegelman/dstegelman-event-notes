@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bba54de-e21e-466f-9d0b-278ea5e30afc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/conferences/djangocon2012/index.rst" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/friday/advanced_security_topics.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/friday/certainty.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/friday/decorators_and_context_managers.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/friday/deployment.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/friday/interfaces_and_python.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/friday/stop_writing_classes.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/apis.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/celery.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/forms.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/learn_java.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/server_bottlenecks.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/templating.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/saturday/testing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/sunday/improve_docs.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/sunday/sketching.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/sunday/whats_new.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/pycon2012/tutorials.rst" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/index.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/advanced_security_topics.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/advanced_security_topics.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/certainty.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/certainty.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/decorators_and_context_managers.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/decorators_and_context_managers.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/deployment.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/deployment.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/interfaces_and_python.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/interfaces_and_python.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/stop_writing_classes.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/friday/stop_writing_classes.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/index.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/apis.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/apis.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/celery.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/celery.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/forms.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/forms.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/learn_java.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/learn_java.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/server_bottlenecks.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/server_bottlenecks.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/templating.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/templating.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/testing.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/saturday/testing.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/sunday/improve_docs.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/sunday/improve_docs.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/sunday/sketching.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/sunday/sketching.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/sunday/whats_new.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/sunday/whats_new.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/tutorials.doctree" afterPath="$PROJECT_DIR$/build/doctrees/conferences/pycon2012/tutorials.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django/django_class_views.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django/django_class_views.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django/django_resources.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django/django_resources.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django/django_snippets.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django/django_snippets.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django/testing/selenium.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django/testing/selenium.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django_class_views.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django_class_views.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django_resources.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django_resources.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/django_snippets.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/django_snippets.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/python/python_resources.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/python/python_resources.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/notes/python_resources.doctree" afterPath="$PROJECT_DIR$/build/doctrees/notes/python_resources.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/.buildinfo" afterPath="$PROJECT_DIR$/build/html/.buildinfo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/objects.inv" afterPath="$PROJECT_DIR$/build/html/objects.inv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/conferences/pycon2012/index.txt" afterPath="$PROJECT_DIR$/build/html/_sources/conferences/pycon2012/index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/index.txt" afterPath="$PROJECT_DIR$/build/html/_sources/index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/index.html" afterPath="$PROJECT_DIR$/build/html/conferences/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/advanced_security_topics.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/advanced_security_topics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/certainty.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/certainty.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/decorators_and_context_managers.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/decorators_and_context_managers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/deployment.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/deployment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/interfaces_and_python.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/interfaces_and_python.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/stop_writing_classes.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/friday/stop_writing_classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/index.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/apis.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/apis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/celery.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/celery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/forms.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/learn_java.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/learn_java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/server_bottlenecks.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/server_bottlenecks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/templating.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/templating.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/testing.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/saturday/testing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/sunday/improve_docs.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/sunday/improve_docs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/sunday/sketching.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/sunday/sketching.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/sunday/whats_new.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/sunday/whats_new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conferences/pycon2012/tutorials.html" afterPath="$PROJECT_DIR$/build/html/conferences/pycon2012/tutorials.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/genindex.html" afterPath="$PROJECT_DIR$/build/html/genindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/index.html" afterPath="$PROJECT_DIR$/build/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django/django_class_views.html" afterPath="$PROJECT_DIR$/build/html/notes/django/django_class_views.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django/django_resources.html" afterPath="$PROJECT_DIR$/build/html/notes/django/django_resources.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django/django_snippets.html" afterPath="$PROJECT_DIR$/build/html/notes/django/django_snippets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django/testing/selenium.html" afterPath="$PROJECT_DIR$/build/html/notes/django/testing/selenium.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django_class_views.html" afterPath="$PROJECT_DIR$/build/html/notes/django_class_views.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django_resources.html" afterPath="$PROJECT_DIR$/build/html/notes/django_resources.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/django_snippets.html" afterPath="$PROJECT_DIR$/build/html/notes/django_snippets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/python/python_resources.html" afterPath="$PROJECT_DIR$/build/html/notes/python/python_resources.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/notes/python_resources.html" afterPath="$PROJECT_DIR$/build/html/notes/python_resources.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/search.html" afterPath="$PROJECT_DIR$/build/html/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/searchindex.js" afterPath="$PROJECT_DIR$/build/html/searchindex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/conf.py" afterPath="$PROJECT_DIR$/source/conf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/conferences/pycon2012/index.rst" afterPath="$PROJECT_DIR$/source/conferences/pycon2012/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.rst" afterPath="$PROJECT_DIR$/source/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/notes/django/django_class_views.rst" afterPath="$PROJECT_DIR$/source/notes/django/django_class_views.rst" />
+    </list>
+    <ignored path="dstegelman-event-notes.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="dstegelman-event-notes" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="33" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conf.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="223" column="0" selection-start="7264" selection-end="7264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="django_class_views.rst" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/notes/django/django_class_views.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="55" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.88758785">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conferences/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="19" selection-start="112" selection-end="127" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conferences/djangocon2012/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="256" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conferences/pycon2012/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutorials.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conferences/pycon2012/tutorials.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="advanced_security_topics.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conferences/pycon2012/friday/advanced_security_topics.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="75" selection-end="530" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/source/conferences/pycon2012/index.rst" />
+        <option value="$PROJECT_DIR$/source/index.rst" />
+        <option value="$PROJECT_DIR$/source/conferences/djangocon2012/index.rst" />
+        <option value="$PROJECT_DIR$/source/conf.py" />
+        <option value="$PROJECT_DIR$/source/notes/django/django_class_views.rst" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="244" />
+    <option name="y" value="107" />
+    <option name="width" value="1680" />
+    <option name="height" value="1024" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dstegelman-event-notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="dstegelman-event-notes" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1344025983245</created>
+      <updated>1344025983245</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="244" y="107" width="1680" height="1024" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/conferences/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="112" selection-end="127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conferences/pycon2012/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conferences/pycon2012/tutorials.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conferences/pycon2012/friday/advanced_security_topics.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="75" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conferences/djangocon2012/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="256" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="33" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="0" selection-start="7264" selection-end="7264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/notes/django/django_class_views.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="55" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.88758785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
