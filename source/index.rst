@@ -3,58 +3,31 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==================
-Schedule and Notes
-==================
+=====================
+Conferences and Notes
+=====================
+
+Below is my collection of notes on general Django/Python development as well as conference and meet up notes.  
 
 
-Pycon 2012
-==========
+Notes
+=====
 
-Tuts
-----
+.. toctree::
+    :maxdepth: 1
+    
+    notes/django/django_resources
+    notes/django/django_snippets
+    notes/django/django_class_views
+    notes/python/python_resources
+    notes/django/testing/selenium
+
+
+Conferences
+===========
 
 .. toctree::
     :maxdepth: 2
     
-    pycon2012/tutorials
-
-Friday
-------
-
-.. toctree::
-    :maxdepth: 2
-    
-    pycon2012/friday/stop_writing_classes
-    pycon2012/friday/advanced_security_topics
-    pycon2012/friday/interfaces_and_python
-    pycon2012/friday/decorators_and_context_managers
-    pycon2012/friday/certainty 
-    pycon2012/friday/deployment   
-
-
-Saturday
---------
-
-.. toctree::
-    :maxdepth: 2
-    
-    pycon2012/saturday/templating
-    pycon2012/saturday/forms
-    pycon2012/saturday/testing
-    pycon2012/saturday/server_bottlenecks
-    pycon2012/saturday/apis
-    pycon2012/saturday/celery
-    pycon2012/saturday/learn_java
-    
-Sunday
-------
-
-.. toctree::
-    :maxdepth: 2
-    
-    pycon2012/sunday/sketching
-    pycon2012/sunday/improve_docs
-    pycon2012/sunday/whats_new
-    
+    conferences/index    
 

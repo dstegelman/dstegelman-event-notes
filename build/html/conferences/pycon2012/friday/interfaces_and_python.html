@@ -1,0 +1,247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Interfaces and Python &mdash; Conference Notes and Best Practices 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Tuts" href="../index.html" />
+    <link rel="next" title="Decorators and Context Managers" href="decorators_and_context_managers.html" />
+    <link rel="prev" title="Advanced Security Topics" href="advanced_security_topics.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="decorators_and_context_managers.html" title="Decorators and Context Managers"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="advanced_security_topics.html" title="Advanced Security Topics"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li>
+          <li><a href="../../index.html" >Conferences</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Tuts</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="interfaces-and-python">
+<h1>Interfaces and Python<a class="headerlink" href="#interfaces-and-python" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong> Eric Snow</p>
+<p><strong>Track:</strong> IV</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<div><p>In 2.6, Python introduced the Abstract Base Classes. Before that we had &#8220;protocols&#8221; (and we still do). In this talk we&#8217;ll look at how the general concept of interfaces fits into today&#8217;s Python. We&#8217;ll also look at some of the alternate proposals of the past, some of the controversies around ABCs, and the direction interfaces might go in the future.</p>
+<p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/126/">https://us.pycon.org/2012/schedule/presentation/126/</a></p>
+<p><a class="reference external" href="http://goo.gl/hwkTy">http://goo.gl/hwkTy</a></p>
+</div></blockquote>
+<div class="section" id="object-interfaces">
+<h2>Object Interfaces<a class="headerlink" href="#object-interfaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Code as documentation</li>
+<li>Adaption</li>
+<li>Static analysis</li>
+</ul>
+<div class="section" id="what-is-it">
+<h3>What is it<a class="headerlink" href="#what-is-it" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Communication</li>
+<li>Documentation</li>
+<li>Doc strings</li>
+<li>Comments</li>
+<li>Progromatic Interfaces</li>
+</ul>
+</div>
+<div class="section" id="what-is-it-in-python">
+<h3>What is it in Python<a class="headerlink" href="#what-is-it-in-python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Abstract base classes</li>
+<li>Protocols</li>
+<li>Build your own</li>
+</ul>
+</div>
+<div class="section" id="protocols">
+<h3>Protocols<a class="headerlink" href="#protocols" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>iterator</li>
+<li>context manager</li>
+<li>sequence</li>
+<li>descriptor</li>
+<li>No Validation is done to make sure they are following the protocol</li>
+</ul>
+</div>
+<div class="section" id="eafp-vs-lbyl">
+<h3>EAFP vs LBYL<a class="headerlink" href="#eafp-vs-lbyl" title="Permalink to this headline">¶</a></h3>
+<p><tt class="docutils literal"><span class="pre">It's</span> <span class="pre">easier</span> <span class="pre">to</span> <span class="pre">ask</span> <span class="pre">forgiveness</span> <span class="pre">than</span> <span class="pre">permission</span></tt></p>
+<p>Call it and worry about the failing later.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># EAFP</span>
+<span class="k">def</span> <span class="nf">is_dead</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">obj</span><span class="p">(</span><span class="s">&quot;only a flesh wound&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">MyError</span><span class="p">(</span><span class="s">&quot;expected a callable object&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">Look</span> <span class="pre">before</span> <span class="pre">you</span> <span class="pre">leap</span></tt></p>
+<p>Check a variable/method for something before you call it.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># LBYL</span>
+<span class="k">def</span> <span class="nf">is_dead</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s">&quot;__call__&quot;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">MyError</span><span class="p">(</span><span class="s">&quot;expected a callable object&quot;</span><span class="p">)</span>
+    <span class="n">obj</span><span class="p">(</span><span class="s">&quot;only a flesh wound&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="duck-typing">
+<h3>Duck-typing<a class="headerlink" href="#duck-typing" title="Permalink to this headline">¶</a></h3>
+<p><tt class="docutils literal"><span class="pre">polymorphism</span> <span class="pre">by</span> <span class="pre">capability</span></tt> vs <tt class="docutils literal"><span class="pre">polymorphism</span> <span class="pre">by</span> <span class="pre">type</span></tt></p>
+<p><tt class="docutils literal"><span class="pre">Requiring</span> <span class="pre">a</span> <span class="pre">specific</span> <span class="pre">interface</span> <span class="pre">instead</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">specific</span> <span class="pre">type.</span></tt></p>
+</div>
+</div>
+<div class="section" id="abstract-base-classes">
+<h2>Abstract Base Classes<a class="headerlink" href="#abstract-base-classes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="write-your-own">
+<h3>Write Your Own<a class="headerlink" href="#write-your-own" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>class Entree(metaclass=ABCMeta):
+
+    @abstractmethod
+    def with_spam(self):
+        """spam spam spam spam"""
+
+    @abstractproperty
+    def spamcontent(self):
+        """Lovely spam! Wonderful spam!"""</pre>
+</div>
+<ul class="simple">
+<li>Decorators make your methods Abstract.</li>
+<li>If a class has abstract methods then that class will be abstract.</li>
+<li>ABCMeta marks class as abstract</li>
+</ul>
+</div>
+<div class="section" id="use-existing">
+<h3>Use Existing<a class="headerlink" href="#use-existing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Register an existing class as an implementation</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">MyDict</span><span class="p">(</span><span class="n">Mapping</span><span class="p">):</span> <span class="k">pass</span>
+<span class="gp">...</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">issubclass</span><span class="p">(</span><span class="n">MyDict</span><span class="p">,</span> <span class="n">Mapping</span><span class="p">)</span>
+<span class="go">True</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">MyDict</span><span class="p">(),</span> <span class="n">Mapping</span><span class="p">)</span>
+<span class="go">True</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">MyDict</span><span class="o">.</span><span class="n">__bases__</span>
+<span class="go">(&lt;class &#39;collections.abc.Mapping&#39;&gt;,)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Interfaces and Python</a><ul>
+<li><a class="reference internal" href="#object-interfaces">Object Interfaces</a><ul>
+<li><a class="reference internal" href="#what-is-it">What is it</a></li>
+<li><a class="reference internal" href="#what-is-it-in-python">What is it in Python</a></li>
+<li><a class="reference internal" href="#protocols">Protocols</a></li>
+<li><a class="reference internal" href="#eafp-vs-lbyl">EAFP vs LBYL</a></li>
+<li><a class="reference internal" href="#duck-typing">Duck-typing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#abstract-base-classes">Abstract Base Classes</a><ul>
+<li><a class="reference internal" href="#write-your-own">Write Your Own</a></li>
+<li><a class="reference internal" href="#use-existing">Use Existing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="advanced_security_topics.html"
+                        title="previous chapter">Advanced Security Topics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="decorators_and_context_managers.html"
+                        title="next chapter">Decorators and Context Managers</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/conferences/pycon2012/friday/interfaces_and_python.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="decorators_and_context_managers.html" title="Decorators and Context Managers"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="advanced_security_topics.html" title="Advanced Security Topics"
+             >previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li>
+          <li><a href="../../index.html" >Conferences</a> &raquo;</li>
+          <li><a href="../index.html" >Tuts</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Derek Stegelman.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

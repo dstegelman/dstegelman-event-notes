@@ -1,0 +1,217 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Advanced Security Topics &mdash; Conference Notes and Best Practices 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Tuts" href="../index.html" />
+    <link rel="next" title="Interfaces and Python" href="interfaces_and_python.html" />
+    <link rel="prev" title="Stop Writing Classes" href="stop_writing_classes.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="interfaces_and_python.html" title="Interfaces and Python"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="stop_writing_classes.html" title="Stop Writing Classes"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li>
+          <li><a href="../../index.html" >Conferences</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Tuts</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="advanced-security-topics">
+<h1>Advanced Security Topics<a class="headerlink" href="#advanced-security-topics" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong> Paul McMillan - Django Security Developer</p>
+<p><strong>Track:</strong> II</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<div><p>If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.</p>
+<p><a class="reference external" href="https://us.pycon.org/2012/schedule/presentation/467/">https://us.pycon.org/2012/schedule/presentation/467/</a></p>
+</div></blockquote>
+<div class="section" id="hasing-and-encryption">
+<h2>Hasing and Encryption<a class="headerlink" href="#hasing-and-encryption" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>MD5, SHA1, SHA256</li>
+<li>If you are typing md5 you are doing it wrong</li>
+<li>Did this file get corrupted?</li>
+<li>Use has for Message signing.</li>
+<li>It is hard to generate a file that duplicates your stored hash.</li>
+<li>Use HMAC for message signing.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">hash</span><span class="p">(</span><span class="n">secret</span> <span class="o">+</span> <span class="nb">hash</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Salt your secret key</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">salt</span> <span class="o">=</span> <span class="s">&#39;session_cookie_signing&#39;</span>
+<span class="n">hmac</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">salt</span> <span class="o">+</span> <span class="n">secret_key</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>When using has algorithims do not use MD5.</li>
+<li>SHA1 is better, but use SHA256</li>
+<li>Web could use SHA512 as its not 32 bit.</li>
+</ul>
+<div class="section" id="why-need-encryption">
+<h3>Why Need Encryption<a class="headerlink" href="#why-need-encryption" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Do not implement yourself.</li>
+<li>Use SSL/TLS</li>
+</ul>
+</div>
+</div>
+<div class="section" id="random-numbers">
+<h2>Random Numbers<a class="headerlink" href="#random-numbers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Default random number is predictable.</li>
+<li>Use <tt class="docutils literal"><span class="pre">SystemRandom()</span></tt> instead</li>
+</ul>
+<div class="highlight-python"><pre>from random import SystemRandom()</pre>
+</div>
+</div>
+<div class="section" id="timing-attacks">
+<h2>Timing attacks<a class="headerlink" href="#timing-attacks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>String comparison does not compare the entire string at once.</li>
+<li>Not safe</li>
+<li>Compare the length first</li>
+<li>Compare different sets of characters, even if the previous ones worked.</li>
+</ul>
+</div>
+<div class="section" id="pickle">
+<h2>Pickle<a class="headerlink" href="#pickle" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Do not put data straight into pickle.</li>
+<li>Use JSON for untrusted data</li>
+</ul>
+</div>
+<div class="section" id="always-verify-your-assumptions">
+<h2>Always verify your assumptions<a class="headerlink" href="#always-verify-your-assumptions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PIP installing.</li>
+<li>I trust django developers</li>
+<li>I truse the people who wrote pip</li>
+<li>PIP verifies MD5 hash</li>
+</ul>
+<div class="section" id="am-i-safe">
+<h3>Am I Safe?<a class="headerlink" href="#am-i-safe" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>All these things require you to trust everyone on the internet</li>
+<li>You <tt class="docutils literal"><span class="pre">must</span></tt> verify</li>
+<li>Python doesn&#8217;t make it easy to check SSL certs.</li>
+<li>Consider using Crate.io</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Advanced Security Topics</a><ul>
+<li><a class="reference internal" href="#hasing-and-encryption">Hasing and Encryption</a><ul>
+<li><a class="reference internal" href="#why-need-encryption">Why Need Encryption</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#random-numbers">Random Numbers</a></li>
+<li><a class="reference internal" href="#timing-attacks">Timing attacks</a></li>
+<li><a class="reference internal" href="#pickle">Pickle</a></li>
+<li><a class="reference internal" href="#always-verify-your-assumptions">Always verify your assumptions</a><ul>
+<li><a class="reference internal" href="#am-i-safe">Am I Safe?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="stop_writing_classes.html"
+                        title="previous chapter">Stop Writing Classes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="interfaces_and_python.html"
+                        title="next chapter">Interfaces and Python</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/conferences/pycon2012/friday/advanced_security_topics.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="interfaces_and_python.html" title="Interfaces and Python"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="stop_writing_classes.html" title="Stop Writing Classes"
+             >previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.0 documentation</a> &raquo;</li>
+          <li><a href="../../index.html" >Conferences</a> &raquo;</li>
+          <li><a href="../index.html" >Tuts</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Derek Stegelman.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
