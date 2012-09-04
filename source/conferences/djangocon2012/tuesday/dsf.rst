@@ -63,3 +63,7 @@ Infrastructure
 * djangosnippets.com
 * $1000 to read the docs
 * Hosting thanks to Heroku, MediaTemple
+* Training
+* Sprints/PyCon sprint
+* Conference Sponsorships (Pycon/DjangoCons)
+* Travel Grants
