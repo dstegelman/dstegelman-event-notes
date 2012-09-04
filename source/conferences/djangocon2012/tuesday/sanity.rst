@@ -12,7 +12,36 @@ Maintaining Your Sanity While Maintaining Your Open Source App
 
 
 
+Brewedbyus.com
 
+Packaging
+---------
 
+* Package to use PIP
+* Direct users to use PIP first
+* Setuptools find_packages
 
+``` Include Package Data ```
 
+* Pull description from ReadMe
+* Follow PEP386
+* 3 Numbers
+* Be consistent in version numbers
+* MANIFEST.in
+* Register on Pypi!
+
+Documentation
+-------------
+
+* No Giant READMEs
+* Docs should be available online
+* Use sphinx and Read the Docs
+
+Things To Document
+------------------
+
+* How to install
+* Description of the project
+* How to configure the app
+* Release Notes
+* Be clear
