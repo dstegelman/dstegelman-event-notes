@@ -67,3 +67,6 @@ Infrastructure
 * Sprints/PyCon sprint
 * Conference Sponsorships (Pycon/DjangoCons)
 * Travel Grants
+* DSF as a publisher?
+* Merchandise
+* Help us help you
