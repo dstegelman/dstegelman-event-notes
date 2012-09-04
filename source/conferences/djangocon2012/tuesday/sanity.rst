@@ -66,3 +66,20 @@ Test with TOX
 * User virtualenv to test
 * Test different versions of python/django
 * Test different DBs
+
+Goals
+-----
+
+* State your goals
+* Set expectations
+
+License
+-------
+
+* Always include a License
+* Prepare for the future
+
+Be Ready for Python 3
+---------------------
+
+* 
