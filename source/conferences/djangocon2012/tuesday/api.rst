@@ -72,5 +72,7 @@ Django Specific
 * Decrease reliance on self
 * Resist urge to use magic
 
+https://speakerdeck.com/u/daniellindsley/p/api-design-tips
+
 
 
