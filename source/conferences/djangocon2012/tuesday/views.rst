@@ -36,5 +36,44 @@ MRO
 * Bit.ly/PythonMRO
 * A little enterprise-ish
 
+Why Use CBV
+-----------
+
+* Faster implementation
+* Keep views.py concise
+* Everything is a class (Models, Forms, Templates)
+* Special cases are not special enough to break the rules, Views should be classes too.
+
+Batteries Included
+
+Object Based Views
+------------------
+
+* Single object
+* Multitple object mixins
+* Detail/List View
+
+Form Based Views
+----------------
+
+* Form View
+* Create View
+* Update View
+
+Date based Views
+----------------
+
+* Year
+* Month
+* Day
+* Date
+
+Utility Views
+-------------
+
+* Template Response
+* Template View
+* Redirect
+* View
 
 
