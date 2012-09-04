@@ -32,3 +32,23 @@ You cannot make everyone happy
 * No copy-paste should be needed
 * Good docs matter
 * Real world use is the best use.
+
+Design
+------
+
+* Bottom up
+* Top down
+* Bottom up sucks
+* Top down feels better
+* Everything fits together
+* Less duplication
+* Test Driven Design
+
+Things you Should Do
+--------------------
+
+* Small components
+* Reflection (To and From)  Be able to reverse operate
+
+
+
