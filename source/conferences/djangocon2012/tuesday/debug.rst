@@ -106,6 +106,7 @@ ispyd
 
 * Interactive debug console for use in production
 * Application must have backdoor, listens to socket
+* Demo
 
 
 
