@@ -25,7 +25,7 @@ Tuesday
 .. toctree::
     :maxdepth: 2
 
-
+    tuesday/keynote
 
 Wednesday
 ---------
