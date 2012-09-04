@@ -21,3 +21,5 @@ Design and Open Source
 * Teach each other
 
 These notes are short, because this talk was very good and I forgot to take a lot of notes..
+
+https://speakerdeck.com/u/bryan/p/designing-your-open-source-project
