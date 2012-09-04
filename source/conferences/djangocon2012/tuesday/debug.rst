@@ -71,4 +71,22 @@ Web Page Performance
 * WebPageTest
 * Firebug
 
+Transaction Tracing
+-------------------
+
+* Newrelic provides tracing at the function/method level.
+* Monkey patching instrumentation
+
+    newrelic.api.function_trace.wrap_function_code
+
+Profiling
+---------
+
+* Thread Sampling
+** Plop
+** statprof
+* Full Profile
+** cprofile
+** pytrace
+
 
