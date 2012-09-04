@@ -51,6 +51,26 @@ Things you Should Do
 * Reflection (To and From)  Be able to reverse operate
 * Narrow Familiarity - How similar is the code itself.
 * Assume the worst
+* Use it, then step back and ask yourself how to make it better, easier for the user
+* Quick wins
+* Return values should be consistent
+
+
+Things you should NOT do
+------------------------
+
+* Low level API is good enough
+* Wildly different return values
+* If its diffcult to test, its probably wrong
+
+Django Specific
+---------------
+
+* Pluggable backend all the things
+* Declaritive syntax
+* Avoid global state (Use __init__ )
+* Decrease reliance on self
+* Resist urge to use magic
 
 
 
