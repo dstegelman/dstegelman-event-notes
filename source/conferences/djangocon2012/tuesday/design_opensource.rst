@@ -12,3 +12,12 @@ Designing Your Open Source Project
 
 
 
+Design and Open Source
+----------------------
+
+* Developers and Designers are quite similar.
+* Respecting clarity
+* Find hybrids
+* Teach each other
+
+These notes are short, because this talk was very good and I forgot to take a lot of notes..

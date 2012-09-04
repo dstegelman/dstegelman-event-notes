@@ -10,3 +10,25 @@ API Design Tips
 
     The focus of this talk will be on some pragmatic tips on how to design programmatic (non-web-based) APIs for use by other developers.
 
+What
+----
+
+* Not HTTP APIs
+* Programmatic APIs
+* Libraries
+
+Why
+---
+
+* Other people use your code all the time
+* You might be not happy with past you.
+
+You cannot make everyone happy
+------------------------------
+
+* You make assumptions about your environment
+* These don't always apply for other people
+* More people are happy if they can extend libraries
+* No copy-paste should be needed
+* Good docs matter
+* Real world use is the best use.
