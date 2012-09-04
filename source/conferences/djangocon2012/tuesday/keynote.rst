@@ -18,7 +18,14 @@ Local vs National
 * Role of Money
 * Influence of people with money and access
 
+State Rights
+------------
 
+* Citizen power scares elected officials.
+
+
+* Knowledge is power
+* Knowledge and passion go together
 
 
 
