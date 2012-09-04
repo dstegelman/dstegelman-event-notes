@@ -89,4 +89,25 @@ Profiling
 ** cprofile
 ** pytrace
 
+Browser
+-------
+
+* django-debug-toolbar
+* paste error middleware
+
+Live Debugging (Dark Art)
+-------------------------
+
+* Building backdoors
+* USing Pythons built in logging
+
+ispyd
+=====
+
+* Interactive debug console for use in production
+* Application must have backdoor, listens to socket
+
+
+
+
 
