@@ -76,4 +76,31 @@ Utility Views
 * Redirect
 * View
 
+Common Methods
+--------------
+
+* Dispatch, (Get, Post, Put, Delete)
+* get_context_data
+* get_object
+* get_queryset
+* get_form_class
+* get_form_kwargs
+* get_success_url
+* form_valid
+* Demo
+* Add base classes for common functionality in views.  Convert them into Mixins.
+
+Customizing
+-----------
+
+* context_object_name
+
+
+
+
+
+
+
+
+
 
