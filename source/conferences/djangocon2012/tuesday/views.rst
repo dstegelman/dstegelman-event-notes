@@ -94,6 +94,26 @@ Customizing
 -----------
 
 * context_object_name
+* Base classes and Mixins are the same thing.
+* Mixins have a single purpose
+* Base class can have multiple mixins or whole new functions.
+
+Design Patterns
+---------------
+
+* Using None as default
+
+Decoration
+----------
+
+* You can decorate inside the urls.py
+* You can add a second variable and wrap the .as_view() method.
+
+
+
+
+
+
 
 
 
