@@ -102,12 +102,21 @@ Design Patterns
 ---------------
 
 * Using None as default
+* Move mixins to the front
+* Prevent code from running if it doesn't meet requirements (Users aren't logged in).
 
 Decoration
 ----------
 
 * You can decorate inside the urls.py
 * You can add a second variable and wrap the .as_view() method.
+
+Function Based Views
+--------------------
+
+* Session manipulation
+* Login/Logout
+
 
 
 
