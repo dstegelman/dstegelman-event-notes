@@ -26,6 +26,14 @@ Tuesday
     :maxdepth: 2
 
     tuesday/keynote
+    tuesday/sanity
+    tuesday/debug
+    tuesday/views
+    tuesday/gevent
+    tuesday/dsf
+    tuesday/design_opensource
+    tuesday/api
+
 
 Wednesday
 ---------
