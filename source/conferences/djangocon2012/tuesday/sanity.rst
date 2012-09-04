@@ -82,4 +82,22 @@ License
 Be Ready for Python 3
 ---------------------
 
-* 
+* Be ready to be replaced
+* TOX
+
+Rejecting Requests
+------------------
+
+* You can't reject every contribution
+* Don't reject based on tests and docs.  Point them in the right direction.
+* Do NOT accept every request.
+* If you accept it, be prepared to maintain it.
+
+
+Avoid Burnout
+-------------
+
+* Its okay to step away for a while.
+* Should not feel like a burden
+
+
