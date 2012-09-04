@@ -45,3 +45,24 @@ Things To Document
 * How to configure the app
 * Release Notes
 * Be clear
+
+Hosting Docs
+------------
+
+* Setup post commit hook
+* Link to your repo
+
+Testing
+-------
+
+* Tests should not fail without an example project
+* Tests should not depend on small settings changes
+* Test only models
+* Run tests.py
+
+Test with TOX
+-------------
+
+* User virtualenv to test
+* Test different versions of python/django
+* Test different DBs
