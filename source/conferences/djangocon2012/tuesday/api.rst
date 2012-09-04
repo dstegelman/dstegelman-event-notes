@@ -49,6 +49,8 @@ Things you Should Do
 
 * Small components
 * Reflection (To and From)  Be able to reverse operate
+* Narrow Familiarity - How similar is the code itself.
+* Assume the worst
 
 
 
