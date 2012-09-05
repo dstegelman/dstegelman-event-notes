@@ -82,5 +82,8 @@ Tell Django your using HTTPS::
     CSRF_COOKIE_SECURE = TRue
     SECURE_PROXY_SSL_HEADER
     
-
+* Protect data via SKC
+* Support encrypted payloads
+* FIPS / NIST recommendations
+* 1.4 is much better than 1.3
 
