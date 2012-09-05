@@ -47,6 +47,7 @@ How to Teach
 * Guided practice
 * Independent Practice
 * Generalization
+* Have them teach/explain the concept back to you
 
 Lost 35% of CS courses in High Schools
 --------------------------------------
@@ -67,4 +68,11 @@ Invite more people into Open Source
 -----------------------------------
 
 * Speak language of education
+* Open source IT in schools is not the answer, right now.
+
+
+
+
+
+
 
