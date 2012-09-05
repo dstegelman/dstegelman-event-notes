@@ -40,6 +40,7 @@ Wednesday
     wednesday/testing
     wednesday/bdfl
     wednesday/forms
+    wednesday/flask
 
 Thursday
 --------

@@ -61,3 +61,13 @@ Distributed Services
 Deliver Form Definition over API
 ---------------------------------
 
+* Define form in API
+* Serialize Form
+* Deliver, Recieve, Validate, Show Errors, and Process
+* Render, Submit, Validate
+* django remote forms
+* Encapsulate processing in form.save similar to model form
+
+Render forms with Handlebars/JS/CSS
+
+
