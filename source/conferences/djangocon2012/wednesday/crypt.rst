@@ -59,3 +59,28 @@ Public Key Cryptography
 * Asymmetric
 * N-way
 * 2 + keys
+
+Asymmetric Encryption Properties
+--------------------------------
+
+* Lots of complex keys
+* Slow
+
+Really need to be running HTTPS
+
+Django
+------
+
+* Django does it right
+* Enable HTTPS
+* Enforce use of HTTPS via redirects
+* Inform django your useing HTTPS
+
+Tell Django your using HTTPS::
+
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = TRue
+    SECURE_PROXY_SSL_HEADER
+    
+
+
