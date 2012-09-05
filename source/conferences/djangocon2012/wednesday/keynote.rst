@@ -1,6 +1,6 @@
-=======
-Keynote
-=======
+=================================
+Keynote - Fixing Computer Science
+=================================
 
 **Presenter:** Selena Deckelmann
 
@@ -11,7 +11,7 @@ Keynote
     Keynote Address
 
 Fixing Computer Science
-=======================
+-----------------------
 
 * Computer science enrollment has decreased
 * 50% growth expected by 2018
@@ -69,6 +69,9 @@ Invite more people into Open Source
 
 * Speak language of education
 * Open source IT in schools is not the answer, right now.
+* Teachers are nautural alies for FOSS developers
+
+Access to computer science is a social justice issue.
 
 
 
