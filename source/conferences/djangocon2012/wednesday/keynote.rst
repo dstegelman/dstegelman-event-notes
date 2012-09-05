@@ -32,8 +32,21 @@ Teaching Someone How to Program
 * Filesystem navigation
 * Very confusing for new users GUI to Terminal
 * Explain filesystems for BOTH GUI and Terminal
+* New users get frustrated easily
 
+Open Licensing of Materials
+---------------------------
 
+* Paris Declaration (http://bit.ly/MTvxzl)
+
+How to Teach
+------------
+
+* Just challenging enough to be interesting, but not hard enough to be frustrating
+* Modeling
+* Guided practice
+* Independent Practice
+* Generalization
 
 
 
