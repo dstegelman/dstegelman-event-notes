@@ -57,3 +57,11 @@ Down the Rabbit Hole
 * db.models.sql.where.WhereNode
 * db.models.sql.compiler.SQLCompailer
 
+* Continually filter from previous filters.
+
+Background
+----------
+
+* Nested queries
+* QuerySets can be merged
+* All aliases in a QuerySet can be changed at once.
