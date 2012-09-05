@@ -1,6 +1,6 @@
-=================================
-Keynote - Fixing Computer Science
-=================================
+==============
+Keynote - BDFL
+==============
 
 **Presenter:** Adrian Holovaty
 
@@ -41,6 +41,7 @@ PJAX
 
 * Single piece of middleware
 * Real time pushing
+
 
 
 

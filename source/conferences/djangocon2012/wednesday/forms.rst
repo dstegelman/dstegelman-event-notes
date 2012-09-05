@@ -42,3 +42,22 @@ What is a form
 --------------
 
 * Blank document with places to add informations
+
+
+Django Forms
+------------
+
+* Binds/Validates data
+* Display
+* Model Forms
+* Easy
+* Widgets
+
+Distributed Services
+--------------------
+
+* Build an API
+
+Deliver Form Definition over API
+---------------------------------
+
