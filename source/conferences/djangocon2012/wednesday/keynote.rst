@@ -48,6 +48,17 @@ How to Teach
 * Independent Practice
 * Generalization
 
+Lost 35% of CS courses in High Schools
+--------------------------------------
+
+* Other academic areas are represented in High Schools
+* Shortage of teachers in areas where CS is desired
+* Minorities are not represented
+* Computer science seen as an elective
+* Not a part of Math or Science
+
+
+
 
 
 
