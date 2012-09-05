@@ -29,3 +29,16 @@ API Clients
 
 * Website no longer lives on the same server
 * Forms exist on phones/web sites/other devices
+
+
+Issue
+-----
+
+* Forms have to be re created on each device
+* Browser considered a device
+* API/Form doesn't match up
+
+What is a form
+--------------
+
+* Blank document with places to add informations
