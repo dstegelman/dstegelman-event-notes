@@ -68,4 +68,7 @@ Time Consuming to Write
  Phabricator
  -----------
  
+ * Code Reviews
+ 
+ * Culture is Key
  
