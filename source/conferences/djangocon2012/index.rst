@@ -35,6 +35,7 @@ Wednesday
     :maxdepth: 2
     
     wednesday/keynote
+    wednesday/orm
 
 Thursday
 --------
