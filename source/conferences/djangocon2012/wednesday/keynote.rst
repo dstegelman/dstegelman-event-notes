@@ -57,8 +57,14 @@ Lost 35% of CS courses in High Schools
 * Computer science seen as an elective
 * Not a part of Math or Science
 
+What we need to Teach
+---------------------
 
+* Computational Thinking
+* Large gap between teachers and open source developers
 
+Invite more people into Open Source
+-----------------------------------
 
-
+* Speak language of education
 
