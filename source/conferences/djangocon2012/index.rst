@@ -39,6 +39,7 @@ Wednesday
     wednesday/crypt
     wednesday/testing
     wednesday/bdfl
+    wednesday/forms
 
 Thursday
 --------
