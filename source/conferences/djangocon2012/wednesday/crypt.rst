@@ -86,4 +86,6 @@ Tell Django your using HTTPS::
 * Support encrypted payloads
 * FIPS / NIST recommendations
 * 1.4 is much better than 1.3
+* Keys can be kept in memory
+
 
