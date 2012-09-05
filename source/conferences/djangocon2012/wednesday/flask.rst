@@ -12,8 +12,22 @@ Why Django Sucks
 
 
 
+Django Benefits
+---------------
+
+* Makes modular decisions for you
+* Makes security decisions for you
+* Excellent Docs
+* Installable 3rd party apps
+* Community resources
 
 
+Django Apps
+-----------
+
+* Tools
+* WEb Process
+* Worker Processes
 
 
 
