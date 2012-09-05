@@ -36,6 +36,7 @@ Wednesday
     
     wednesday/keynote
     wednesday/orm
+    wednesday/crypt
 
 Thursday
 --------
