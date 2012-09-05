@@ -46,3 +46,14 @@ Layers
 * django/db/modles/query.py - 1800 lines
 * django/db/models/sql/query.py - 2000 lines
 * django/db/backends/* - base.py, operations.py
+
+Down the Rabbit Hole
+--------------------
+
+* Simple filter query Article.objects.filter()
+
+* db.models.query.QuerySet
+* db.models.sql.query.Query
+* db.models.sql.where.WhereNode
+* db.models.sql.compiler.SQLCompailer
+
