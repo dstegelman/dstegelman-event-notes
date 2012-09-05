@@ -29,6 +29,32 @@ Django Apps
 * WEb Process
 * Worker Processes
 
+Single Codebase is Great
+------------------------
+
+* Benefits of the whole stack
+* Architecutre
+* DRY
+* Only deploy once
+
+
+Single Codebases are evil
+-------------------------
+
+* Tightly coupled
+* Broad knowledge is required
+* Tech debt is high
+* Must deploy everything at once
+
+
+
+Constraints are Good
+--------------------
+
+* Editors vs IDE
+* Mac OS X vs Desktop Linux
+* Pen and Paper vs Digital Notes
+* Monolithic apps
 
 
 
