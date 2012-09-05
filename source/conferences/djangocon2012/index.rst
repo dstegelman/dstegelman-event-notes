@@ -38,6 +38,7 @@ Wednesday
     wednesday/orm
     wednesday/crypt
     wednesday/testing
+    wednesday/bdfl
 
 Thursday
 --------
