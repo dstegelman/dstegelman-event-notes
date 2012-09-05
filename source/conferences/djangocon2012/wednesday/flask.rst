@@ -57,4 +57,32 @@ Constraints are Good
 * Monolithic apps
 
 
+Seperated Services
+------------------
 
+* API vs Front End
+* Build for Services
+
+* Decouple front end from backend?
+
+Django not for API services
+---------------------------
+
+Django as API Consumer
+----------------------
+
+* Database is handled by API
+* Makes modular decisions for you
+
+Flask
+-----
+
+* Simple HTTP 
+* WSGI App Framework
+* Jinja2 Template
+* Lots of docs
+* Very simple
+* Bring your own batteries
+* No ORM for form validation
+* Greater flexibility
+* Configuration is simple
