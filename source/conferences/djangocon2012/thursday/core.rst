@@ -27,6 +27,17 @@ What is happening on the Schema change API
 Python 3 - Strategies and Tips for Migration
 --------------------------------------------
 
+* Not hard
+* Django has documented how they approached the change
+* Confident that 3rd party apps will be able to convert it easily.
+
+
+New Areas of Interest for new dev
+---------------------------------
+
+* Real time
+* Performance
+* 2.0 game plan
 
 
 
