@@ -67,3 +67,18 @@ Give SQL A break
 * Counting
 
 
+Good Ideas
+----------
+
+* Use hierarchy
+* Atomic transactions
+* Different keyspaces for difference apps
+* Do not store large values in Redis
+* Do not count on persistence
+* Don't forget that operations are Atomic
+
+LUA - Lightweight Embeddable Scripting
+--------------------------------------
+
+* Construct and deconstruct JSON
+
