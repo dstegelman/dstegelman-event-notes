@@ -37,5 +37,33 @@ Crash Course
 * Linked lists
 * Sets
 * Scores, floating point values
+* Dictionary keys not ordered
+
+Boring
+------
+
+* Basically a cache
+* Clearing house
+
+
+Case Study
+----------
+
+* Run hundreds of ads on Facebook and snapshot their performance as fast as possible.
+* Facebook API does not update stats in real time
+* Gather stats and store as a hash map
+
+
+Drop In
+-------
+
+* Celery
+* Cache for Django
+* Use Redis for celery instead of RabbitMQ
+
+Give SQL A break
+----------------
+
+* Counting
 
 
