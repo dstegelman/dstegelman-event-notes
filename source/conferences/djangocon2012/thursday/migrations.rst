@@ -1,6 +1,6 @@
-================
+==========================================
 Models and Migrations and Schemas - oh my!
-================
+==========================================
 
 **Presenter:** ANDREW GODWIN
 
@@ -22,6 +22,8 @@ Past
 * South 0.1 2008
 * 0.2 - MySQL
 * 0.3 - Dependencies
+* 0.4 - Alter columns
+* 0.5 - ORM Freezing
 
 
 Databases
