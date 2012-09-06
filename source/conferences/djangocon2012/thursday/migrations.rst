@@ -24,7 +24,14 @@ Past
 * 0.3 - Dependencies
 * 0.4 - Alter columns
 * 0.5 - ORM Freezing
+* 0.6 - Field introspection
+* 0.7 - data/schema split, missing defaults for Not null, custom fields ignored.
 
+Things to Change
+----------------
+
+* No rebase/collapse
+* Opaque migrations (Impossible to peek inside migrations)
 
 Databases
 ---------
@@ -34,6 +41,16 @@ Databases
 * Extra fields are fine
 * Missing fields are not
 * Painful/slow to sync
+
+The Future
+----------
+
+* django.db.backends.schema
+* Database abstraction layer
+* contrib.migrations
+* Migration creation/running, will replace South for these operations.
+* No frozen ORM
+* Raw SQL support
 
 
 
