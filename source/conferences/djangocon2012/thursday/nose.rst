@@ -45,4 +45,25 @@ Functions as tests
 Test Generators
 ---------------
 
-* 
+* cannot use in TestCase subclass
+
+Test Attributes
+---------------
+
+* attribute plugin
+* @attr('selenium')
+* manage.py test - a selenium
+
+Goodies
+-------
+
+* Custom error classes
+* Extensible
+* Plugins
+
+Speed
+-----
+
+* Switching contexts
+* Encourages running tests
+* No more test fixtures!
