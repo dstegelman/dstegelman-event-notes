@@ -52,5 +52,6 @@ Thursday
     thursday/redis
     thursday/core
     thursday/migrations
+    thursday/nose
 
 
