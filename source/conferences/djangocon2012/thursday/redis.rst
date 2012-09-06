@@ -82,3 +82,13 @@ LUA - Lightweight Embeddable Scripting
 
 * Construct and deconstruct JSON
 
+Redis Hate
+----------
+
+* Non persistence
+* Need to hire a Sys Admin
+* Needs to fit in Memory
+* Redis does not return memory to system
+* Redis on dedicated hardware with lots of RAM
+* Single process, single CPU 
+
