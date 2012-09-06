@@ -46,6 +46,24 @@ Questions
 * Using logging
 * Do a pip freeze to see what packages are being used
 * What type of version control is being used if any.
+* Tests
+* South?
+* Virtualenv?
+* Do they have a README
+* Document things you find.
+* Keep an open mind
+* Research the client
+
+Additional
+----------
+
+* Assume your code will last forever
+* Code like django core team is reviewing it
+* Resist pull for speed from your boss
+* Excercise your right to say no.
+* Take time to be great.  Bad coders hurt good ones.
+* It's your reputation
+
 
 
 
