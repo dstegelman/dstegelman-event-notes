@@ -47,5 +47,7 @@ Thursday
 
 .. toctree::
     :maxdepth: 2
+    
+    thursday/code_review
 
 
