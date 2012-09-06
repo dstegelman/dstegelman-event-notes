@@ -62,7 +62,16 @@ Admin Radical restart?
 * Backend could serve an API and allow clients to provide better admin functionality
 * Very challenging project
 * Very large task
+* A lot of the admin does not use django tools that exist now
+* Admin does not use Class based views
 
+
+Will a team approach to design help django?
+-------------------------------------------
+
+* Designers work best not solo
+* Motivate each other
+* Unified vision
 
 
 
