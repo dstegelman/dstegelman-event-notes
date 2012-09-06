@@ -51,5 +51,6 @@ Thursday
     thursday/code_review
     thursday/redis
     thursday/core
+    thursday/migrations
 
 
