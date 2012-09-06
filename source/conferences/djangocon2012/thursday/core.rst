@@ -39,7 +39,29 @@ New Areas of Interest for new dev
 * Performance
 * 2.0 game plan
 
+How do you break contrib out and still maintain them (namespaces)
+-----------------------------------------------------------------
 
+* Support for better namespacing in Python 3.3
+* In practice cannot use name spaced packages
+
+What would be the thing that you think you could actually change in 2.0
+-----------------------------------------------------------------------
+
+* Everything is a view.
+
+ORM is agnositc, should it be broken to allow performance improvements in Postgres
+----------------------------------------------------------------------------------
+
+* There should be more support for performance improvements in certain DB Backends
+* 1.5 1.6 might have some improvements
+
+Admin Radical restart?
+----------------------
+
+* Backend could serve an API and allow clients to provide better admin functionality
+* Very challenging project
+* Very large task
 
 
 
