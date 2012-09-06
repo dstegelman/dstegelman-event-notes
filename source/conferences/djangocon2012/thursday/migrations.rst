@@ -51,6 +51,14 @@ The Future
 * Migration creation/running, will replace South for these operations.
 * No frozen ORM
 * Raw SQL support
+* SQL Output support
+
+
+South 1.0
+---------
+
+* Python 3 support with Django 1.5
+* Python 2.6 required
 
 
 
