@@ -9,6 +9,14 @@ Conferences and Notes
 
 Below is my collection of notes on general Django/Python development as well as conference and meet up notes.  
 
+Meetups
+=======
+
+.. toctree::
+    :maxdepth: 1
+
+    meetups/boulder_django_march_26_2013
+
 
 Notes
 =====
