@@ -47,6 +47,24 @@ Minion Config
 * Just connect to master
 * Salt key to connect
 
+Quick Dive into Config
+----------------------
+
+Salt State
+==========
+
+* Packages to install and versions
+* Files
+* Symlinks
+* Databases
+* Web Servers
+* Fine grain control
+* Create users/groups
+
+
+
+
+
 
 
 
