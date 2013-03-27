@@ -25,7 +25,7 @@ What is Salt
 * Good install docs
 
 Master & Minion
-----------------
+===============
 
 * Master server
 * Minions ping masters for updates or can be pushed to by Master
@@ -33,14 +33,19 @@ Master & Minion
 * Masters can also be minions
 * Minion can be db server, app server, mail server, etc.
 
-
 Master Configuration
---------------------
+====================
 
 * Specify backends
 * Point it at a Git Repo! FTW.
 * Quick updates
 
+
+Minion Config
+=============
+
+* Just connect to master
+* Salt key to connect
 
 
 
