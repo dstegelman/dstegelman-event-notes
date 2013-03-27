@@ -34,6 +34,16 @@ Master & Minion
 * Minion can be db server, app server, mail server, etc.
 
 
+Master Configuration
+--------------------
+
+* Specify backends
+* Point it at a Git Repo! FTW.
+* Quick updates
+
+
+
+
 
 
 
