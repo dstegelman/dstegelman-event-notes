@@ -61,6 +61,14 @@ Salt State
 * Fine grain control
 * Create users/groups
 
+Remote Code Execution
+=====================
+
+* Deploy scripts
+
+Vagrant Integration
+-------------------
+
 
 
 
