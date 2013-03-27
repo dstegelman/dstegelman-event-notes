@@ -69,6 +69,11 @@ Remote Code Execution
 Vagrant Integration
 -------------------
 
+* Salty vagrant
+* Use salt to configure Vagrant
+* Pre-seed salt master with the key of your vagrant vm
+* Demo
+
 
 
 
