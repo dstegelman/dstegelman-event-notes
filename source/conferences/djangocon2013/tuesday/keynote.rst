@@ -2,7 +2,7 @@
 Keynote
 =======
 
-**Presenter:** Eric Sterling
+**Presenter:** 
 
 **Track:** N/A
 
