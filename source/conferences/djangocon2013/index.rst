@@ -23,6 +23,12 @@ Tuesday
     :maxdepth: 2
 
     tuesday/keynote
+    tuesday/django_docker
+    tuesday/performance_optimization
+    tuesday/more_requests_less_money
+    tuesday/salt
+    tuesday/search
+    tuesday/fast_tests
 
 Wednesday
 ---------
@@ -30,13 +36,26 @@ Wednesday
 .. toctree::
     :maxdepth: 2
     
-    wednesday/keynote
+    wednesday/agile_not_vulnerable
+    wednesday/transactions
+    wednesday/auth_user
+    wednesday/replication
+    wednesday/ember_js
+    wednesday/everybody_loves_migrations
+    wednesday/small_shop_big
+    wednesday/lightning_talks
 
 Thursday
 --------
 
 .. toctree::
     :maxdepth: 2
+    
+    thursday/third_party
+    thursday/real_time_web
+    thursday/toolsets
+    thursday/take_my_money
+    thursday/integration_testing
     
 
 
