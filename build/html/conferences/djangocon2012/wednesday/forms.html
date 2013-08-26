@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Django Forms in an API World &mdash; Conference Notes and Best Practices 1.2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.2.1 documentation" href="../../../index.html" />
+    <link rel="up" title="Django Con US 2012" href="../index.html" />
+    <link rel="next" title="Why Django Sucks" href="flask.html" />
+    <link rel="prev" title="Keynote - BDFL" href="bdfl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="flask.html" title="Why Django Sucks"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bdfl.html" title="Keynote - BDFL"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Django Con US 2012</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="django-forms-in-an-api-world">
+<h1>Django Forms in an API World<a class="headerlink" href="#django-forms-in-an-api-world" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong>  TAREQUE HOSSAIN</p>
+<p><strong>Track:</strong> I</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<div>In a world of django powered web APIs and arbitrary consumers, traditional methods of rendering &amp; validating django forms are ineffective. We discuss how to uphold the API provider/ consumer separation, yet utilize provider&#8217;s django form subsystem to power forms in a pure JS consumer. We achieve this by serializing form configurations, rendering metadata, error handlers &amp; exposing them over API.</div></blockquote>
+<div class="section" id="whats-wrong-with-forms">
+<h2>Whats wrong with Forms<a class="headerlink" href="#whats-wrong-with-forms" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="new-way">
+<h2>New Way<a class="headerlink" href="#new-way" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Django forms live on API server</li>
+<li>Validates/saves API</li>
+<li>Trying to match frontend to the API</li>
+</ul>
+</div>
+<div class="section" id="api-clients">
+<h2>API Clients<a class="headerlink" href="#api-clients" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Website no longer lives on the same server</li>
+<li>Forms exist on phones/web sites/other devices</li>
+</ul>
+</div>
+<div class="section" id="issue">
+<h2>Issue<a class="headerlink" href="#issue" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Forms have to be re created on each device</li>
+<li>Browser considered a device</li>
+<li>API/Form doesn&#8217;t match up</li>
+</ul>
+</div>
+<div class="section" id="what-is-a-form">
+<h2>What is a form<a class="headerlink" href="#what-is-a-form" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Blank document with places to add informations</li>
+</ul>
+</div>
+<div class="section" id="django-forms">
+<h2>Django Forms<a class="headerlink" href="#django-forms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Binds/Validates data</li>
+<li>Display</li>
+<li>Model Forms</li>
+<li>Easy</li>
+<li>Widgets</li>
+</ul>
+</div>
+<div class="section" id="distributed-services">
+<h2>Distributed Services<a class="headerlink" href="#distributed-services" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Build an API</li>
+</ul>
+</div>
+<div class="section" id="deliver-form-definition-over-api">
+<h2>Deliver Form Definition over API<a class="headerlink" href="#deliver-form-definition-over-api" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Define form in API</li>
+<li>Serialize Form</li>
+<li>Deliver, Recieve, Validate, Show Errors, and Process</li>
+<li>Render, Submit, Validate</li>
+<li>django remote forms</li>
+<li>Encapsulate processing in form.save similar to model form</li>
+</ul>
+<p>Render forms with Handlebars/JS/CSS</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Django Forms in an API World</a><ul>
+<li><a class="reference internal" href="#whats-wrong-with-forms">Whats wrong with Forms</a></li>
+<li><a class="reference internal" href="#new-way">New Way</a></li>
+<li><a class="reference internal" href="#api-clients">API Clients</a></li>
+<li><a class="reference internal" href="#issue">Issue</a></li>
+<li><a class="reference internal" href="#what-is-a-form">What is a form</a></li>
+<li><a class="reference internal" href="#django-forms">Django Forms</a></li>
+<li><a class="reference internal" href="#distributed-services">Distributed Services</a></li>
+<li><a class="reference internal" href="#deliver-form-definition-over-api">Deliver Form Definition over API</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="bdfl.html"
+                        title="previous chapter">Keynote - BDFL</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="flask.html"
+                        title="next chapter">Why Django Sucks</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/conferences/djangocon2012/wednesday/forms.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="flask.html" title="Why Django Sucks"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bdfl.html" title="Keynote - BDFL"
+             >previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Django Con US 2012</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011 - 2012, Derek Stegelman.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

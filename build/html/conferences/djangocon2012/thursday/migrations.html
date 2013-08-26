@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Models and Migrations and Schemas - oh my! &mdash; Conference Notes and Best Practices 1.2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.2.1 documentation" href="../../../index.html" />
+    <link rel="up" title="Django Con US 2012" href="../index.html" />
+    <link rel="next" title="Django Nose" href="nose.html" />
+    <link rel="prev" title="Django Core Team" href="core.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nose.html" title="Django Nose"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="core.html" title="Django Core Team"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Django Con US 2012</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="models-and-migrations-and-schemas-oh-my">
+<h1>Models and Migrations and Schemas - oh my!<a class="headerlink" href="#models-and-migrations-and-schemas-oh-my" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong> ANDREW GODWIN</p>
+<p><strong>Track:</strong> I</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<div>A look at the past, current and future of schemas, migrations and Django, and what it means for both website developers and ops staff.</div></blockquote>
+<div class="section" id="past">
+<h2>Past<a class="headerlink" href="#past" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Databases hate schema changes</li>
+<li>Locks whole tables</li>
+<li>Hammer I/O</li>
+<li>Inconsistent</li>
+<li>Django-evolution</li>
+<li>dmigrations</li>
+<li>South 0.1 2008</li>
+<li>0.2 - MySQL</li>
+<li>0.3 - Dependencies</li>
+<li>0.4 - Alter columns</li>
+<li>0.5 - ORM Freezing</li>
+<li>0.6 - Field introspection</li>
+<li>0.7 - data/schema split, missing defaults for Not null, custom fields ignored.</li>
+</ul>
+</div>
+<div class="section" id="things-to-change">
+<h2>Things to Change<a class="headerlink" href="#things-to-change" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>No rebase/collapse</li>
+<li>Opaque migrations (Impossible to peek inside migrations)</li>
+</ul>
+</div>
+<div class="section" id="databases">
+<h2>Databases<a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Code/schemas split</li>
+<li>Database isn&#8217;t going to use Git</li>
+<li>Extra fields are fine</li>
+<li>Missing fields are not</li>
+<li>Painful/slow to sync</li>
+</ul>
+</div>
+<div class="section" id="the-future">
+<h2>The Future<a class="headerlink" href="#the-future" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>django.db.backends.schema</li>
+<li>Database abstraction layer</li>
+<li>contrib.migrations</li>
+<li>Migration creation/running, will replace South for these operations.</li>
+<li>No frozen ORM</li>
+<li>Raw SQL support</li>
+<li>SQL Output support</li>
+</ul>
+</div>
+<div class="section" id="south-1-0">
+<h2>South 1.0<a class="headerlink" href="#south-1-0" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python 3 support with Django 1.5</li>
+<li>Python 2.6 required</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Models and Migrations and Schemas - oh my!</a><ul>
+<li><a class="reference internal" href="#past">Past</a></li>
+<li><a class="reference internal" href="#things-to-change">Things to Change</a></li>
+<li><a class="reference internal" href="#databases">Databases</a></li>
+<li><a class="reference internal" href="#the-future">The Future</a></li>
+<li><a class="reference internal" href="#south-1-0">South 1.0</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="core.html"
+                        title="previous chapter">Django Core Team</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nose.html"
+                        title="next chapter">Django Nose</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/conferences/djangocon2012/thursday/migrations.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="nose.html" title="Django Nose"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="core.html" title="Django Core Team"
+             >previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Django Con US 2012</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011 - 2012, Derek Stegelman.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

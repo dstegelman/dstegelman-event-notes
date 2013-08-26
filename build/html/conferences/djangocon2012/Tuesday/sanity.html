@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Maintaining Your Sanity While Maintaining Your Open Source App &mdash; Conference Notes and Best Practices 1.2 documentation</title>
+    <title>Maintaining Your Sanity While Maintaining Your Open Source App &mdash; Conference Notes and Best Practices 1.2.1 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -15,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '1.2',
+        VERSION:     '1.2.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +23,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="Conference Notes and Best Practices 1.2 documentation" href="../../../index.html" />
+    <link rel="top" title="Conference Notes and Best Practices 1.2.1 documentation" href="../../../index.html" />
     <link rel="up" title="Django Con US 2012" href="../index.html" />
     <link rel="next" title="Debugging Live Python Web Applications" href="debug.html" />
     <link rel="prev" title="Keynote" href="keynote.html" /> 
@@ -42,7 +41,7 @@
         <li class="right" >
           <a href="keynote.html" title="Keynote"
              accesskey="P">previous</a> |</li>
-        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2 documentation</a> &raquo;</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
           <li><a href="../index.html" accesskey="U">Django Con US 2012</a> &raquo;</li> 
       </ul>
     </div>  
@@ -95,6 +94,67 @@
 <li>Be clear</li>
 </ul>
 </div>
+<div class="section" id="hosting-docs">
+<h2>Hosting Docs<a class="headerlink" href="#hosting-docs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Setup post commit hook</li>
+<li>Link to your repo</li>
+</ul>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Tests should not fail without an example project</li>
+<li>Tests should not depend on small settings changes</li>
+<li>Test only models</li>
+<li>Run tests.py</li>
+</ul>
+</div>
+<div class="section" id="test-with-tox">
+<h2>Test with TOX<a class="headerlink" href="#test-with-tox" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>User virtualenv to test</li>
+<li>Test different versions of python/django</li>
+<li>Test different DBs</li>
+</ul>
+</div>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>State your goals</li>
+<li>Set expectations</li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Always include a License</li>
+<li>Prepare for the future</li>
+</ul>
+</div>
+<div class="section" id="be-ready-for-python-3">
+<h2>Be Ready for Python 3<a class="headerlink" href="#be-ready-for-python-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Be ready to be replaced</li>
+<li>TOX</li>
+</ul>
+</div>
+<div class="section" id="rejecting-requests">
+<h2>Rejecting Requests<a class="headerlink" href="#rejecting-requests" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>You can&#8217;t reject every contribution</li>
+<li>Don&#8217;t reject based on tests and docs.  Point them in the right direction.</li>
+<li>Do NOT accept every request.</li>
+<li>If you accept it, be prepared to maintain it.</li>
+</ul>
+</div>
+<div class="section" id="avoid-burnout">
+<h2>Avoid Burnout<a class="headerlink" href="#avoid-burnout" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Its okay to step away for a while.</li>
+<li>Should not feel like a burden</li>
+</ul>
+</div>
 </div>
 
 
@@ -109,6 +169,14 @@
 <li><a class="reference internal" href="#packaging">Packaging</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a></li>
 <li><a class="reference internal" href="#things-to-document">Things To Document</a></li>
+<li><a class="reference internal" href="#hosting-docs">Hosting Docs</a></li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+<li><a class="reference internal" href="#test-with-tox">Test with TOX</a></li>
+<li><a class="reference internal" href="#goals">Goals</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#be-ready-for-python-3">Be Ready for Python 3</a></li>
+<li><a class="reference internal" href="#rejecting-requests">Rejecting Requests</a></li>
+<li><a class="reference internal" href="#avoid-burnout">Avoid Burnout</a></li>
 </ul>
 </li>
 </ul>
@@ -153,13 +221,13 @@
         <li class="right" >
           <a href="keynote.html" title="Keynote"
              >previous</a> |</li>
-        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2 documentation</a> &raquo;</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
           <li><a href="../index.html" >Django Con US 2012</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2011 - 2012, Derek Stegelman.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
     </div>
   </body>
 </html>

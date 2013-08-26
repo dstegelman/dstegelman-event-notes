@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Django Deployment with Salt &mdash; Conference Notes and Best Practices 1.2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.2.1 documentation" href="../index.html" />
+    <link rel="next" title="Django Class Based Views" href="boulder_django_july_30_2013.html" />
+    <link rel="prev" title="Conferences and Notes" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="boulder_django_july_30_2013.html" title="Django Class Based Views"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Conferences and Notes"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="django-deployment-with-salt">
+<h1>Django Deployment with Salt<a class="headerlink" href="#django-deployment-with-salt" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong> Nick Lang</p>
+<p><strong>Description:</strong></p>
+<p>Django deployment with Salt</p>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Developer at Lab 305</li>
+<li>Worked at Journal World</li>
+</ul>
+</div>
+<div class="section" id="what-is-salt">
+<h2>What is Salt<a class="headerlink" href="#what-is-salt" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Config management in Python similar to Chef/Puppet</li>
+<li>Remote code execution</li>
+<li>Awesome!</li>
+<li>salt.readthedocs.org</li>
+<li>Good install docs</li>
+</ul>
+<div class="section" id="master-minion">
+<h3>Master &amp; Minion<a class="headerlink" href="#master-minion" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Master server</li>
+<li>Minions ping masters for updates or can be pushed to by Master</li>
+<li>Has states</li>
+<li>Masters can also be minions</li>
+<li>Minion can be db server, app server, mail server, etc.</li>
+</ul>
+</div>
+<div class="section" id="master-configuration">
+<h3>Master Configuration<a class="headerlink" href="#master-configuration" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Specify backends</li>
+<li>Point it at a Git Repo! FTW.</li>
+<li>Quick updates</li>
+</ul>
+</div>
+<div class="section" id="minion-config">
+<h3>Minion Config<a class="headerlink" href="#minion-config" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Just connect to master</li>
+<li>Salt key to connect</li>
+</ul>
+</div>
+</div>
+<div class="section" id="quick-dive-into-config">
+<h2>Quick Dive into Config<a class="headerlink" href="#quick-dive-into-config" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="salt-state">
+<h3>Salt State<a class="headerlink" href="#salt-state" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Packages to install and versions</li>
+<li>Files</li>
+<li>Symlinks</li>
+<li>Databases</li>
+<li>Web Servers</li>
+<li>Fine grain control</li>
+<li>Create users/groups</li>
+</ul>
+</div>
+<div class="section" id="remote-code-execution">
+<h3>Remote Code Execution<a class="headerlink" href="#remote-code-execution" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Deploy scripts</li>
+</ul>
+</div>
+</div>
+<div class="section" id="vagrant-integration">
+<h2>Vagrant Integration<a class="headerlink" href="#vagrant-integration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Salty vagrant</li>
+<li>Use salt to configure Vagrant</li>
+<li>Pre-seed salt master with the key of your vagrant vm</li>
+<li>Demo</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Django Deployment with Salt</a><ul>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#what-is-salt">What is Salt</a><ul>
+<li><a class="reference internal" href="#master-minion">Master &amp; Minion</a></li>
+<li><a class="reference internal" href="#master-configuration">Master Configuration</a></li>
+<li><a class="reference internal" href="#minion-config">Minion Config</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quick-dive-into-config">Quick Dive into Config</a><ul>
+<li><a class="reference internal" href="#salt-state">Salt State</a></li>
+<li><a class="reference internal" href="#remote-code-execution">Remote Code Execution</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vagrant-integration">Vagrant Integration</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Conferences and Notes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="boulder_django_july_30_2013.html"
+                        title="next chapter">Django Class Based Views</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/meetups/boulder_django_march_26_2013.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="boulder_django_july_30_2013.html" title="Django Class Based Views"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Conferences and Notes"
+             >previous</a> |</li>
+        <li><a href="../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011 - 2012, Derek Stegelman.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

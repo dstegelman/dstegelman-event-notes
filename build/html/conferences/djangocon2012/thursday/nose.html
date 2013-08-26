@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Django Nose &mdash; Conference Notes and Best Practices 1.2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Conference Notes and Best Practices 1.2.1 documentation" href="../../../index.html" />
+    <link rel="up" title="Django Con US 2012" href="../index.html" />
+    <link rel="prev" title="Models and Migrations and Schemas - oh my!" href="migrations.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="migrations.html" title="Models and Migrations and Schemas - oh my!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Django Con US 2012</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="django-nose">
+<h1>Django Nose<a class="headerlink" href="#django-nose" title="Permalink to this headline">¶</a></h1>
+<p><strong>Presenter:</strong> ERIK ROSE</p>
+<p><strong>Track:</strong> II</p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<div>Django&#8217;s testrunner gets you started quickly, but you soon hit your head on its limitations as your project grows. By trading it for nose, a testing framework popular in the wider Python community, we can reduce boilerplate, boost performance, and improve testing UI, with only a few lines of setting changes. Re-use your test DBs, integrate with Jenkins, split your suite into pieces, and more.</div></blockquote>
+<div class="section" id="django-tests-pain">
+<h2>Django Tests Pain<a class="headerlink" href="#django-tests-pain" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Crowded</li>
+<li>Slow</li>
+<li>Overbroad</li>
+<li>Rough</li>
+<li>Extensible but not scalably so</li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>pip install django-nose</li>
+<li>django_nose</li>
+<li>django_nose.NoseTestSuiteRunner</li>
+</ul>
+</div>
+<div class="section" id="discovery">
+<h2>Discovery<a class="headerlink" href="#discovery" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Find test by reg ex</li>
+<li>&#64;istest</li>
+<li>Subclasses of TestCase</li>
+<li>No more accidental shadowing</li>
+<li>No more forgotten imports</li>
+</ul>
+</div>
+<div class="section" id="functions-as-tests">
+<h2>Functions as tests<a class="headerlink" href="#functions-as-tests" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Package level setup and tear down</li>
+</ul>
+</div>
+<div class="section" id="test-generators">
+<h2>Test Generators<a class="headerlink" href="#test-generators" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>cannot use in TestCase subclass</li>
+</ul>
+</div>
+<div class="section" id="test-attributes">
+<h2>Test Attributes<a class="headerlink" href="#test-attributes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>attribute plugin</li>
+<li>&#64;attr(&#8216;selenium&#8217;)</li>
+<li>manage.py test - a selenium</li>
+</ul>
+</div>
+<div class="section" id="goodies">
+<h2>Goodies<a class="headerlink" href="#goodies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Custom error classes</li>
+<li>Extensible</li>
+<li>Plugins</li>
+</ul>
+</div>
+<div class="section" id="speed">
+<h2>Speed<a class="headerlink" href="#speed" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Switching contexts</li>
+<li>Encourages running tests</li>
+<li>No more test fixtures!</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Django Nose</a><ul>
+<li><a class="reference internal" href="#django-tests-pain">Django Tests Pain</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#discovery">Discovery</a></li>
+<li><a class="reference internal" href="#functions-as-tests">Functions as tests</a></li>
+<li><a class="reference internal" href="#test-generators">Test Generators</a></li>
+<li><a class="reference internal" href="#test-attributes">Test Attributes</a></li>
+<li><a class="reference internal" href="#goodies">Goodies</a></li>
+<li><a class="reference internal" href="#speed">Speed</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="migrations.html"
+                        title="previous chapter">Models and Migrations and Schemas - oh my!</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/conferences/djangocon2012/thursday/nose.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="migrations.html" title="Models and Migrations and Schemas - oh my!"
+             >previous</a> |</li>
+        <li><a href="../../../index.html">Conference Notes and Best Practices 1.2.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Django Con US 2012</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011 - 2012, Derek Stegelman.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

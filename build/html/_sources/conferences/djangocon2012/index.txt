@@ -33,11 +33,25 @@ Wednesday
 
 .. toctree::
     :maxdepth: 2
+    
+    wednesday/keynote
+    wednesday/orm
+    wednesday/crypt
+    wednesday/testing
+    wednesday/bdfl
+    wednesday/forms
+    wednesday/flask
 
 Thursday
 --------
 
 .. toctree::
     :maxdepth: 2
+    
+    thursday/code_review
+    thursday/redis
+    thursday/core
+    thursday/migrations
+    thursday/nose
 
 

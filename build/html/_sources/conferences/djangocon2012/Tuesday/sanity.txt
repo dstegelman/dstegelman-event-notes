@@ -45,3 +45,59 @@ Things To Document
 * How to configure the app
 * Release Notes
 * Be clear
+
+Hosting Docs
+------------
+
+* Setup post commit hook
+* Link to your repo
+
+Testing
+-------
+
+* Tests should not fail without an example project
+* Tests should not depend on small settings changes
+* Test only models
+* Run tests.py
+
+Test with TOX
+-------------
+
+* User virtualenv to test
+* Test different versions of python/django
+* Test different DBs
+
+Goals
+-----
+
+* State your goals
+* Set expectations
+
+License
+-------
+
+* Always include a License
+* Prepare for the future
+
+Be Ready for Python 3
+---------------------
+
+* Be ready to be replaced
+* TOX
+
+Rejecting Requests
+------------------
+
+* You can't reject every contribution
+* Don't reject based on tests and docs.  Point them in the right direction.
+* Do NOT accept every request.
+* If you accept it, be prepared to maintain it.
+
+
+Avoid Burnout
+-------------
+
+* Its okay to step away for a while.
+* Should not feel like a burden
+
+
