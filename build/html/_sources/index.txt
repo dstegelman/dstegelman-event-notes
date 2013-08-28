@@ -17,6 +17,7 @@ Meetups
 
     meetups/boulder_django_march_26_2013
     meetups/boulder_django_july_30_2013
+    meetups/boulder_django_august_27_2013
 
 
 Notes
