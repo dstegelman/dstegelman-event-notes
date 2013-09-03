@@ -1,10 +1,10 @@
 ===================================
-Scaling your write-heavy django app
+Scaling Your Write-Heavy Django App
 ===================================
 
 **Presenter:** Tobias McNulty 
 
-**Track:** 2
+**Track:** II
 
 **Description:**
 
