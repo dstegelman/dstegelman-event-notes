@@ -85,4 +85,13 @@ Fake it Till You Make It With Mock
 * Use mock in more complex situations
 * Track the way objects are used - test assertions, know which attributes that have been called and can report on it.
 
+It's OK to engineer when testing
+================================
+
+* Don't be afraid to invest engineering effort into the test suite.
+* Your tests are Python code, take advantage of it.
+* Write tools to help you
+* Mock, Django Nose
+* Custom test runners
+* If you can't test the code efficiently, refactor the code.
 
