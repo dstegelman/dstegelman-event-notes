@@ -42,9 +42,10 @@ Data in/Data out
 
 * Analyzers - Tokenizer + Filters
 * Tokenizers
-** Whitespace/N-grams/word delimters
+
+	* Whitespace/N-grams/word delimters
 * Filters
-** ASCII/Stemming/Lowercase/stop words/synonyms
+* * ASCII/Stemming/Lowercase/stop words/synonyms
 * Language specific filters.
 * Querying (Data Out)
 * Match tokens against tokens
@@ -56,7 +57,8 @@ Data in/Data out
 Django
 ------
 
-
+* Haystack is a pythonic abstraction
+* ORM Oriented
 
 
 
