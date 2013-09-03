@@ -1,15 +1,12 @@
-=======
+========================
 Performance Optimization
-=======
+========================
 
-**Presenter:** Russell Keith MaGee
+**Presenter:**
 
 **Track:** II
 
 **Description:**
-
-    
-Finding Probelms
 
 
 Front End
@@ -55,3 +52,80 @@ Resource Order
 * Place JS after other resources, ideally at the end of the file.
 * Inline some CSS at the top.
 * Lazy loading (Load images/assets only if the user gets there)
+
+Assets CDNS
+-----------
+
+* Geographically serve assets
+* Improve load time
+
+Improve Backend
+---------------
+
+* SQL Queries
+* Use "values_list"
+* Verify same queries aren't running multiple times
+* Select_related and prefetch_related
+
+Select Related and Prefetch Related
+--------------
+
+* Get foreign keys
+* If getting foreign keys use select_related
+* Prefetch related can work for many to many queries
+
+Cache
+-----
+
+* How should I cache?
+* Memcache
+* Use low level cache?
+
+Low Level
+---------
+
+* Flexibility
+* Reduce lookups
+* get() set() delete() methods
+* Flexibilty to develop your own cache scheme
+* Template fragment cache
+* Can accept context variables
+* example (Get cache template for different users)
+
+Per Site Cache
+--------------
+
+* Great for heavy read sites
+* Not really approprate for immediate change sites
+* Difficult to delete cache backend
+* Google analytics can have issues
+
+Cache Frameworks
+----------------
+
+* Johnny Cache
+* Cache Machine
+* ORM Model cacheing
+
+CDNs
+----
+
+* Browsers support 6 connections per hostname
+* More maximum connections
+* Hashring with CDN domains
+* Each domain is a seperate DNS lookup.
+* Limit what you need to do inside of a request.
+* Defer 
+
+Job Queue
+---------
+
+* Process queues off line
+* Requires more configuration
+
+Server Level
+------------
+
+* Set expires header
+* Cache control headers
+* Gzip responses
