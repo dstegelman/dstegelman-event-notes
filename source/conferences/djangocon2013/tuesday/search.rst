@@ -42,7 +42,6 @@ Data in/Data out
 
 * Analyzers - Tokenizer + Filters
 * Tokenizers
-
 	* Whitespace/N-grams/word delimters
 * Filters
 * * ASCII/Stemming/Lowercase/stop words/synonyms
@@ -61,4 +60,4 @@ Django
 * ORM Oriented
 
 
-
+SearchIndex = data mapping
