@@ -24,6 +24,7 @@ Tuesday
 
     tuesday/keynote
     tuesday/django_docker
+    tuesday/scaling_your_writes
     tuesday/performance_optimization
     tuesday/more_requests_less_money
     tuesday/salt
