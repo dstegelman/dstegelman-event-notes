@@ -90,10 +90,10 @@ Install a package
 
 In /srv/salt/mystate.sls
 
-```
-ngingx:
-	pkg.installed
-```
+::
+	ngingx:
+		pkg.installed
+
 
 High State
 ----------
@@ -124,3 +124,11 @@ Advanced
 * Renderers
 * Returners
 
+Tips and Tricks
+
+::
+
+	output_mode: mixed
+
+* Show me full traceback if error, only respond verbose with errors
+* Jinja2 is powerful, don't go nuts.
