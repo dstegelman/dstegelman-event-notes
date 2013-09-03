@@ -17,7 +17,6 @@ What is Salt
 * Configuration Management
 * Remote execution
 
-
 Configuration Management
 ------------------------
 
@@ -38,3 +37,51 @@ Remote Execution
 * Run one-off scripts
 * Package updates
 * System monitoring/alerting
+
+Familiar Tool
+-------------
+
+* Python
+* YAML
+* Jinja2
+
+Community
+---------
+
+* Great docs
+* Responsive to IRC and Github
+* Backed by for-profit org
+
+Why Not
+-------
+
+* Young project
+* Moves Fast
+* Not SSH (ssh support soon)
+
+Terminology
+-----------
+
+* Chef, knife, cookbook
+* Ansible, playbook, inventory
+* Salt - Master
+
+Salt Terminology
+----------------
+
+* Master - Server that manages teh whole stack
+* Minion - A server controlled by master
+* State - A declaritive Representation of the system state
+* Grain - Static information about a minion (RAM, CPU cores, OS, etc)
+* Pillar - Variables for one or more minions
+* Top File - Matches states or pillars to minions
+* High state - All the state data for a minion
+
+Install
+-------
+
+* pip install for bleeding edge
+* bootstrap.saltstack.org
+* apt-get install salt-master
+* apt-get install salt-minion 
+* Accept minion key on the master
