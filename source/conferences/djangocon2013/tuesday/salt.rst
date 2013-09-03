@@ -85,3 +85,20 @@ Install
 * apt-get install salt-master
 * apt-get install salt-minion 
 * Accept minion key on the master
+
+Install a package
+
+In /srv/salt/mystate.sls
+
+```
+ngingx:
+	pkg.installed
+```
+
+High State
+----------
+
+* Push from master
+* Pull from minion
+* Masterless
+
