@@ -29,6 +29,7 @@ Where did Docker Come From
 * Very Young project
 
 Timeline
+--------
 
 * Jan 2013 internal project
 * March PyCon talk

@@ -53,11 +53,31 @@ Data in/Data out
 * Geospatial search
 * Autocomplete
 
-Django
-------
+Django/Haystack
+---------------
 
 * Haystack is a pythonic abstraction
 * ORM Oriented
+* SearchQuerySet
+* SearchForm
+* Search View
+
+Index Strategies
+----------------
+
+* One Time
+* Real Time
+* Real time-ish (queued)
+* Periodic
+
+Building Search
+---------------
+
+* Model attribute
+* Templates
+* Field method (Method that refers to a field)
+* Queryset to define a search index
+
 
 
 SearchIndex = data mapping
