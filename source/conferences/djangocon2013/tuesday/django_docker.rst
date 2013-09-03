@@ -102,7 +102,6 @@ Use Cases
 * Parallelize tests
 * one DB per test
 
-
 Unit Testing
 ------------
 
@@ -143,6 +142,7 @@ Dokku
 * git push deployment
 
 Flynn.io
+--------
 
 * Open source PASS written in Go
 
@@ -221,7 +221,7 @@ Docker Registry
 * Install private registry for private images
 
 Docker API
- ---------
+----------
  
 * rest API
 * Docker CLI uses the same API

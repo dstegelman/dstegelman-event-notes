@@ -20,7 +20,7 @@ Tuesday
 -------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     tuesday/keynote
     tuesday/django_docker
