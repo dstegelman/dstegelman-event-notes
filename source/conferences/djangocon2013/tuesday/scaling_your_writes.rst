@@ -18,14 +18,32 @@ Scaling your write-heavy django app
 **Notes:**
 
     1. Project Overview
+
            a. 5Essential survey module for UChicago
            b. Not about making app fast but scalable, i.e. multiple users at once
-           c. Main issue is bottle-neck entering data to DB
-           d. Need an easy way to generate load ... JMeter
-           e. Record yourself testing a complex process
-           f. HTTP Cookie Manager built into JMeter
-           g. pgfouine --> log postgres performance
-    2. Scaling Phase 1: Chicago Public Schools
-    3. Scaling Phase 2: The State of Illinois
-    4. Optimizing your PostgresSQL
 
+    2. Scaling Phase 1: Chicago Public Schools
+
+           a. Main issue is bottle-neck entering data to DB
+           b. Need an easy way to generate load ... JMeter
+           c. Record yourself testing a complex process
+           d. HTTP Cookie Manager built into JMeter
+           e. pgfouine --> log postgres performance
+           f. django-cache-machine for specific caching
+           g. Choose what you cache via 'cached =' property on a model
+           h. use read database to avoid load on write DB
+           i. Streaming replication hit PG in 9.1 -- try django-balancer
+
+    3. Scaling Phase 2: The State of Illinois
+
+           a. gevent worker terrible for CPU-bound applications
+           b. NewRelic makes I/O looks expensive, but each worker is processing too many reqs at once
+           c. Use a sync worker in gevent and it will open up the CPU bottleneck
+           d. Database was the bottleneck, still overloaded
+           e. Increased size of EC2 instance, still slow
+           f. Figuring out max_connections: not web server count ... **Machine resources**
+           g. **Use pgbouncer to share a small number of presistent connections**
+           h. Run pgbouncer on your web servers using supervisord
+           i. Don't need max_conn to be so low, but know what you're changing when you change that
+
+    4. Slides: http://cakt.us/djangocon-scaling
