@@ -82,5 +82,6 @@ Fake it Till You Make It With Mock
 * No model/ORM overhead
 * Use mock.patch to focus your tests
 * Patch sys.modules with your own module
-
+* Use mock in more complex situations
+* Track the way objects are used - test assertions, know which attributes that have been called and can report on it.
 
