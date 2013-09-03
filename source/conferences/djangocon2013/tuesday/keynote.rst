@@ -2,7 +2,7 @@
 Keynote
 =======
 
-**Presenter:** Russell Keith McGee
+**Presenter:** Russell Keith MaGee
 
 **Track:** N/A
 
@@ -35,7 +35,7 @@ Support Development
 ===================
 
 * Sponsored Events
-* Conferences (Django CON AU, Kiwi PYcon, PyCon YU, RuPy, PyArkansas)
+* Conferences (DjangoCon AU, Kiwi PYcon, PyCon YU, RuPy, PyArkansas)
 * Sprints (Stockholm, LA, Toulouse), DjangoCon US.
 * Grants (Getting started with Django, Travel Grants, Startup Capital)
 * Grants committee
@@ -62,3 +62,24 @@ Protect IP and Long Term Viability
 * Djangoproject.com/trademarks/
 * Exemptions
 
+Advance the State of the Art
+============================
+
+* Django 1.5 (Initial python 3 transition)
+* Django 1.6 in beta
+* Persistent DB Connections
+* Transaction improvements
+* Django 1.7 (Schema migration, 2013 Google summer of Code, validate refactor, composite foreign keys)
+
+Technical Challenges
+====================
+
+* "Real Time" web
+* Nothing in the box that will help you achieve this.
+* Rich client interfaces
+* Attract new users
+* Positive first experiences
+* Limit wasted effort
+* Improve development tools and processes
+* Funding open source
+* Hire a "django fellow" to work full time on Django.  Manage the community.  Funded by the DSF.
