@@ -91,6 +91,7 @@ Install a package
 In /srv/salt/mystate.sls
 
 ::
+
 	ngingx:
 		pkg.installed
 
@@ -125,6 +126,7 @@ Advanced
 * Returners
 
 Tips and Tricks
+---------------
 
 ::
 
@@ -132,3 +134,4 @@ Tips and Tricks
 
 * Show me full traceback if error, only respond verbose with errors
 * Jinja2 is powerful, don't go nuts.
+* Update often and review the change log
