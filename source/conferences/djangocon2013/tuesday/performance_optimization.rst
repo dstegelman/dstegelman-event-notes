@@ -2,12 +2,13 @@
 Performance Optimization
 ========================
 
-**Presenter:**
+**Presenter:** Joseph Jasinski
 
 **Track:** II
 
 **Description:**
 
+	Your site is slow. But why is your site slow? There are a myriad of different problems that can cause this slowness. Drawn from real world experiences, this talk will help identify different problem areas and techniques for increasing performance. This involves both evaluating your performance on the backend and understand bottlenecks on the frontend.
 
 Front End
 ---------

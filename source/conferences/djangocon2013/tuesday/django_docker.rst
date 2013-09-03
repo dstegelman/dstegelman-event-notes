@@ -8,7 +8,7 @@ Django Docker
 
 **Description:**
 
-	Django and Docker: A marriage made in heaven
+	Docker is a new tool that makes it easy to bundle and deploy your applications to any host running Docker. In this talk I'll show you how to get started with Docker, and how to use it to deploy your Django apps to your different server environments.
 	
 	
 Who
