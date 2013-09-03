@@ -69,7 +69,7 @@ Terminology
 Salt Terminology
 ----------------
 
-* Master - Server that manages teh whole stack
+* Master - Server that manages the whole stack
 * Minion - A server controlled by master
 * State - A declaritive Representation of the system state
 * Grain - Static information about a minion (RAM, CPU cores, OS, etc)
@@ -101,4 +101,26 @@ High State
 * Push from master
 * Pull from minion
 * Masterless
+
+States
+------
+
+* 50 Built in states
+* Build your own
+* pip, virtualenv, mysql, postgres, files, cron
+
+Using Pillars
+-------------
+
+* Code examples 
+* Can use templating language to configure pillar.
+
+Advanced
+--------
+
+* Salt cloud
+* Custom modules
+* Scheduler
+* Renderers
+* Returners
 
