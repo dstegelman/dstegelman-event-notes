@@ -135,3 +135,4 @@ Tips and Tricks
 * Show me full traceback if error, only respond verbose with errors
 * Jinja2 is powerful, don't go nuts.
 * Update often and review the change log
+* Test before you deploy
