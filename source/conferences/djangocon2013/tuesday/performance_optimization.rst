@@ -69,7 +69,7 @@ Improve Backend
 * Select_related and prefetch_related
 
 Select Related and Prefetch Related
---------------
+-----------------------------------
 
 * Get foreign keys
 * If getting foreign keys use select_related

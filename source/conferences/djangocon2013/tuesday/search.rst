@@ -44,7 +44,7 @@ Data in/Data out
 * Tokenizers
 	* Whitespace/N-grams/word delimters
 * Filters
-* * ASCII/Stemming/Lowercase/stop words/synonyms
+	* ASCII/Stemming/Lowercase/stop words/synonyms
 * Language specific filters.
 * Querying (Data Out)
 * Match tokens against tokens
@@ -76,8 +76,29 @@ Building Search
 * Model attribute
 * Templates
 * Field method (Method that refers to a field)
-* Queryset to define a search index
+* Queryset to define a search index (Specify what gets added to the index)
 
+Help Users
+----------
 
+* Improve quality of search
+* Adjust relevance
+* Boot fields, documents, terms
+* Log searches, results, and their success
+* Use search engine as cache
+
+Doing More with Search
+----------------------
+
+* ElasticSearch can configure index analysis.
+* Can configure tokenizers and filters
+* Write a custom backend/New Default analyzer/Update search mapping
+
+Some Gotchas
+------------
+
+* Don't index fields used for sorting
+* Debug search issues (Is this plugged in, is anything indexed?)
+* Haystack debug pannel for django debug toolbar
 
 SearchIndex = data mapping
