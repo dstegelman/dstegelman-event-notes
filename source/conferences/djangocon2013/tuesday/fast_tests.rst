@@ -40,6 +40,7 @@ How to write better tests
 * Write unit tests that are very limited in functionality/scope
 
 Unit Vs Integration
+===================
 
 * For each function that contains business logic, there should be a unit test
 * for each page/view/user path of your project there should exist an integration test.
@@ -68,7 +69,15 @@ The Database is Hot Lava
 * Avoid fixtures
 * Fixtures don't adapt
 * Schema changes will result in failures
-* 
 
+Fake it Till You Make It With Mock
+==================================
+
+* Library that lets you create stub objects
+* Configure behavior for testing
+* Use mock to emulate model instances
+* No model/ORM overhead
+* Use mock.patch to focus your tests
+* Patch sys.modules with your own module
 
 
