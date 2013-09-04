@@ -75,6 +75,7 @@ Transactions in psycopg2
 * cnx.autocommit = True disables this behavior.
 
 Transactions in SQLite
+======================
 
 * Track state
 * Parses statements to insert BEGIN or COMMIT
@@ -83,11 +84,29 @@ Transactions in SQLite
 * Broken by design
 
 Key Learnings
+=============
 
 * DB API requires the same transactional behavior as the SQL standard
 * Client libraries for Databases that always auto commit have to emulate this behavior
 * You can turn it off
 
 Django <= 1.5
+=============
 
 * Django runs with an open transaction
+* Django auto-commits in save(), delete(), update(), and bulk_create()
+
+Transaction middleware
+======================
+
+* One HTTP request = one transaction. Commit on success, roll back on exception.
+* High level apis transaction.autocommit() transaction.commit_on_success()
+
+Behind the Scenes
+=================
+
+* Django maintains a stack of transaction management states
+* Auto: the ORM commits every change
+* Managed: Django doesn't commit
+* Django maintains a "dirty" flag: set automatically by the ORM after writes, must be set manually after raw SQL queries.
+* Nesting doesn't work well
