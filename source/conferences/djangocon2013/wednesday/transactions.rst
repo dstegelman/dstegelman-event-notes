@@ -110,3 +110,20 @@ Behind the Scenes
 * Managed: Django doesn't commit
 * Django maintains a "dirty" flag: set automatically by the ORM after writes, must be set manually after raw SQL queries.
 * Nesting doesn't work well
+
+Default Django 1.6
+==================
+
+* Database-level auto commit
+* ATOMIC_REQUESTS
+* ATOMIC can be used as decorator or as context manager
+* commit on success, roll back on exceptions
+* Guarantees atomicity.
+* Low level API to implement your own transaction management
+
+Key Learnings
+=============
+
+* If you don't understand transactions read the docs in django 1.6
+* ATOMIC_REQUESTS is still a reasonable idea
+* Use the atomic decorator when you need aotmicity.
