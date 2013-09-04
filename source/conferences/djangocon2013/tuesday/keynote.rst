@@ -2,7 +2,7 @@
 Keynote
 =======
 
-**Presenter:** Russell Keith MaGee
+**Presenter:** Russell Keith-MaGee
 
 **Track:** N/A
 
