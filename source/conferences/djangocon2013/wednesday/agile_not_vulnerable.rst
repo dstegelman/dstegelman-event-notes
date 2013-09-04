@@ -20,6 +20,7 @@ Shipping Often With Security/Agile
 * Ability to ship is incredibly valuable but also dangerous.
 
 Overview
+========
 
 * Security is a process not a product.
 * Security is a part of everything you do, every day.
@@ -61,8 +62,14 @@ More on Security
 * You can't really prove that software is secure.  You can only prove that it's insecure.
 * Unknown Unknowns
 * If an issue of this magnitude was discovered in your stack would you be prepared to respond?
+* Need to define terminology to refer to severity of security issues
 
+A good security policy
+======================
 
+* Lays out standard terminology used when talking about security issues
+* Explains the expectations and commitments around vulnerability handling.
+* Creates a transparent repeatable assessment mechanism.
 
 
 
