@@ -35,7 +35,7 @@ Wednesday
 ---------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     wednesday/agile_not_vulnerable
     wednesday/transactions
@@ -50,7 +50,7 @@ Thursday
 --------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     thursday/third_party
     thursday/real_time_web
