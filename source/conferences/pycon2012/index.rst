@@ -14,7 +14,7 @@ Friday
 ------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     friday/stop_writing_classes
     friday/advanced_security_topics
@@ -27,7 +27,7 @@ Saturday
 --------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     saturday/templating
     saturday/forms
@@ -41,7 +41,7 @@ Sunday
 ------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     sunday/sketching
     sunday/improve_docs

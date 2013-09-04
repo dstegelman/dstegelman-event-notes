@@ -16,7 +16,7 @@ Tuesday
 -------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     tuesday/keynote
     tuesday/sanity
@@ -32,7 +32,7 @@ Wednesday
 ---------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     wednesday/keynote
     wednesday/orm
@@ -46,7 +46,7 @@ Thursday
 --------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     thursday/code_review
     thursday/redis
