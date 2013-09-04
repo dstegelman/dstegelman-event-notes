@@ -68,3 +68,12 @@ Migrations
 
 * Make migrations
 * migrate - Applies migrations and legacy collection.  Syncdb removed
+* Autodetector - Makes new migrations
+* Executor - Plans and runs migrations
+
+Better Format
+-------------
+
+* Compound history
+* Stores history as statements in a list
+* Series of Operations
