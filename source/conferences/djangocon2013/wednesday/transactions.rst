@@ -73,3 +73,21 @@ Transactions in psycopg2
 * Even before select statements
 * Idle in transactions
 * cnx.autocommit = True disables this behavior.
+
+Transactions in SQLite
+
+* Track state
+* Parses statements to insert BEGIN or COMMIT
+* SELECT:COMMIT, INSERT, UPDATE, DELETE, REPLACE: Begin
+* Any other statement uses COMMIT
+* Broken by design
+
+Key Learnings
+
+* DB API requires the same transactional behavior as the SQL standard
+* Client libraries for Databases that always auto commit have to emulate this behavior
+* You can turn it off
+
+Django <= 1.5
+
+* Django runs with an open transaction

@@ -5,7 +5,7 @@ Django Con US 2012
 
 **Location:** Hyatt Regency Crystal City, Washington, D.C.
 
-**When:** September 4th–6th
+**When:** September 4th–6th  2012.djangocon.us
 
 **Description:**
 
