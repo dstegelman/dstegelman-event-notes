@@ -64,7 +64,7 @@ Design Goals
 * Third-party compatability
 
 Migrations
-----------
+==========
 
 * Make migrations
 * migrate - Applies migrations and legacy collection.  Syncdb removed
@@ -72,7 +72,7 @@ Migrations
 * Executor - Plans and runs migrations
 
 Better Format
--------------
+=============
 
 * Compound history
 * Stores history as statements in a list
@@ -81,7 +81,30 @@ Better Format
 * Fields need a deconstruct() method.
 
 Multiple AppCaches
-------------------
+==================
 
 * Basically, you can make multiple versions of the same model in memory at once.
 
+Don't Panic
+===========
+
+* Will be upgrade path to new migrations
+* South 2 to backport new format.
+* South 2 out a little after django 1.7
+
+Future Ideas
+------------
+
+* Better autodetection
+* Renames now work
+* Percona support
+* Nonrelational support
+
+Overview
+--------
+
+* New migration Format
+* Even easier to use
+* Django models through and through
+* Use a proper database
+* Schemas are your friend
