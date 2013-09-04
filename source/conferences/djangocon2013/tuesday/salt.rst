@@ -136,3 +136,5 @@ Tips and Tricks
 * Jinja2 is powerful, don't go nuts.
 * Update often and review the change log
 * Test before you deploy
+
+https://speakerdeck.com/ipmb/getting-started-with-salt

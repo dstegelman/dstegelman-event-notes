@@ -152,3 +152,5 @@ One More Thing
 * No new features in ForeignKey() or M2M
 * Validation that ForeignKey doesn't point at a swapped models.
 * You can make your own models swappable.
+
+https://speakerdeck.com/freakboy3742/red-user-blue-user-myuser-auth-dot-user

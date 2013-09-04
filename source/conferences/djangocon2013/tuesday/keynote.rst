@@ -83,3 +83,5 @@ Technical Challenges
 * Improve development tools and processes
 * Funding open source
 * Hire a "django fellow" to work full time on Django.  Manage the community.  Funded by the DSF.
+
+https://speakerdeck.com/freakboy3742/djangocon-2013-state-of-the-pony
