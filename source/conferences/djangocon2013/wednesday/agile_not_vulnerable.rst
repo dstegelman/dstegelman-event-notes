@@ -71,7 +71,46 @@ A good security policy
 * Explains the expectations and commitments around vulnerability handling.
 * Creates a transparent repeatable assessment mechanism.
 
+Terminology
+===========
 
+* Advisory
+* Low
+* Medium
+* High
+* Critical
 
+Advisory
+========
+
+* Issues that the security team wishes to communicate but carry no specific required action.  
+* May contain recommended actions, but no specific response is required.
+
+Low
+===
+
+* Issues that are expected to be resolved, but have low risk, or low consequences.  Should not interrupt
+day to day operations.
+
+Medium
+======
+
+* Carry some risk, but have low impact.  May have someone work on.
+
+High
+====
+
+* Carry substantial risk, publicly disclosed issues.  Will probably interrupt several developers from multiple teams.
+
+Critical
+========
+
+* Threaten the integrity of the company.  Great financial risk or otherwise "sky is falling" level issues.
+* "All hands on deck"
+
+Assessment
+==========
+
+* Start with OWASP for risk rating
 
 
