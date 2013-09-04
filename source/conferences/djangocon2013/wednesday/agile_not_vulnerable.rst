@@ -112,5 +112,15 @@ Assessment
 ==========
 
 * Start with OWASP for risk rating
+* Risk = Likelihood x Impact
+* How likely is that this issue will be discovered and exploited?
 
+Examples of Vulnerabilities
+===========================
 
+* http://bit.ly/13ds9X0 (PostgreSQL)
+* Likelyhood: threat agent
+* Calculate Threat
+* Calculate your impact
+* Matrix of likelyhood and impact
+* This case came out to High level.
