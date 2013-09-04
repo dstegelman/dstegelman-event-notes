@@ -61,3 +61,7 @@ Python client libraries
 * PEP 249
 * Connection, performs commits and rollbacks
 * Cursor, Executes queries, fetches results.
+* Auto-commit should be initially off
+* Interface should be provided to turn it back on
+* Closing a connection without committing the changes first will cause an implicit rollback to be performed.
+
