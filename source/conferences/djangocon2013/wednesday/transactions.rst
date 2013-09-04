@@ -21,7 +21,7 @@ Transaction Management
 SQL-1999
 ========
 
-* Savepoints (Like sub-transactions)
+* Save points (Like sub-transactions)
 * Statements always run in a transactions
 * Transactions are opened automatically
 * Transactions are advanced technology.
@@ -40,3 +40,24 @@ Auto Commit
 * Wrap each statement in ints own transaction
 * Just execute my query!
 * Most databases default to auto commit.
+
+Auto Commit in PostgreSQL
+=========================
+
+* Server always auto commit
+* Client libs can emulate standard behavior
+* in psql: \set autocommit off
+
+Auto Commit in SQLite
+=====================
+* Transaction semantics are tightly related to the implementation of atomic commit
+* Sqlite automatically starts a transaction before all statements except select
+* It automatically commits such transactions as soon as all statements finish executing
+* Transactions are always serializable
+
+Python client libraries
+=======================
+
+* PEP 249
+* Connection, performs commits and rollbacks
+* Cursor, Executes queries, fetches results.
