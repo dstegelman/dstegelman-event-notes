@@ -31,3 +31,12 @@ Dreaded Error
 
 * Current Transaction is aborted, commands ignored until end of transaction block
 * Means - A previous statement failed, the application must perform a rollback
+* Recovery must be done in the application (Any auto-recovery scheme breaks transactional integrity)
+
+Auto Commit
+===========
+
+* Commit implicitly after each statement.
+* Wrap each statement in ints own transaction
+* Just execute my query!
+* Most databases default to auto commit.
