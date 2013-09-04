@@ -77,3 +77,11 @@ Better Format
 * Compound history
 * Stores history as statements in a list
 * Series of Operations
+* Nicer way of serializing fields
+* Fields need a deconstruct() method.
+
+Multiple AppCaches
+------------------
+
+* Basically, you can make multiple versions of the same model in memory at once.
+
