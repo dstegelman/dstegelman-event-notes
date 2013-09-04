@@ -65,3 +65,11 @@ Python client libraries
 * Interface should be provided to turn it back on
 * Closing a connection without committing the changes first will cause an implicit rollback to be performed.
 
+Transactions in psycopg2
+========================
+
+* Tracks transaction state
+* Inserts a BEGIN before each statement unless there is already a transaction in progress
+* Even before select statements
+* Idle in transactions
+* cnx.autocommit = True disables this behavior.
