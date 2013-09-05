@@ -13,7 +13,7 @@ Making Django Play Nice with Third Party Services
 	
 Making Django Play Nice with Third Party Services
 -------------------------------------------------
-
+@mattmakai
 
 Why
 ===
@@ -69,6 +69,7 @@ Evaluate
 * Data gravity? - How much of your critical data is going into the service?  Can you get your data out easily?
 * Stack exchange
 * Long term viability
+* Project Readme/Docs
 
 
 Example
@@ -89,4 +90,16 @@ First Party Binding
 * Update Frequency?
 * Outstanding issues
 
+Creating Your Own Third Party Binding
+=====================================
 
+* Learning
+* python-requests
+
+Tools
+=====
+* Pypi-notifier (Notify when new packages come out)
+* Full stack Python
+* Discovering Third Party Services for Django
+* mattmakai.com
+* Geckoboard widget directory
