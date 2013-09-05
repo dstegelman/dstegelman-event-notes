@@ -23,10 +23,12 @@ Why
 * Little effort to prevent big headaches
 
 What will you learn
+-------------------
 
 * Discover new services
 
-Third Party Service USage
+Third Party Service Usage
+-------------------------
 
 * Discover
 * Evaluate
@@ -34,17 +36,20 @@ Third Party Service USage
 * Maintain
 
 Discover
+--------
 
 * Research when not under pressure to immediately integrate
 * What problem can this service potentially solve.
 
 Mindset
+-------
 
 * Background and philosophy
 * Openness about their solution approach
 * Bookmark services and arguements for and against
 
 Push Sources
+------------
 
 * Leanstack
 * Python Weekly
@@ -76,5 +81,12 @@ Twillio
 * Platform is on Python
 * Open source Django Examples
 * Developer evangelists active
+
+First Party Binding
+===================
+
+* Ideal
+* Update Frequency?
+* Outstanding issues
 
 
