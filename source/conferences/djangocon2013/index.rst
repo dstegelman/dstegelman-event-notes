@@ -44,7 +44,6 @@ Wednesday
     wednesday/ember_js
     wednesday/everybody_loves_migrations
     wednesday/small_shop_big
-    wednesday/lightning_talks
 
 Thursday
 --------
