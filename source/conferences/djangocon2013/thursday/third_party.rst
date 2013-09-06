@@ -23,12 +23,12 @@ Why
 * Little effort to prevent big headaches
 
 What will you learn
--------------------
+===================
 
 * Discover new services
 
 Third Party Service Usage
--------------------------
+=========================
 
 * Discover
 * Evaluate
@@ -36,20 +36,20 @@ Third Party Service Usage
 * Maintain
 
 Discover
---------
+========
 
 * Research when not under pressure to immediately integrate
 * What problem can this service potentially solve.
 
 Mindset
--------
+=======
 
 * Background and philosophy
 * Openness about their solution approach
 * Bookmark services and arguements for and against
 
 Push Sources
-------------
+============
 
 * Leanstack
 * Python Weekly

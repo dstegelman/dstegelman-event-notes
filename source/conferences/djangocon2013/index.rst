@@ -40,10 +40,8 @@ Wednesday
     wednesday/agile_not_vulnerable
     wednesday/transactions
     wednesday/auth_user
-    wednesday/replication
     wednesday/ember_js
     wednesday/everybody_loves_migrations
-    wednesday/small_shop_big
 
 Thursday
 --------
@@ -51,11 +49,13 @@ Thursday
 .. toctree::
     :maxdepth: 1
     
+    thursday/apis
     thursday/third_party
     thursday/real_time_web
-    thursday/toolsets
-    thursday/take_my_money
-    thursday/integration_testing
+	
+    
+https://speakerdeck.com/nduthoit/denormalize-all-the-things
+https://speakerdeck.com/nduthoit/the-path-to-smoother-database-migrations
     
 
 

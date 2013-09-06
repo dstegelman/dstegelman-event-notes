@@ -8,10 +8,14 @@ Building Rich Applications with Django and Ember
 
 **Description:**
 
-	Ember.js is the most advanced client-side JavaScript framework available: it provides optimistic server updates, automatically-updating templates and sensible defaults to dramatically increase developer productivity.
+	Ember.js is the most advanced client=side JavaScript framework available: it provides optimistic server updates, automatically=updating templates and sensible defaults to dramatically increase developer productivity.
+
+
+Building Rich Apps with Django and Ember
+----------------------------------------
 
 Ember and Django
-----------------
+================
 
 Dot Cloud Example
 
@@ -21,19 +25,19 @@ Dot Cloud Example
 * Ember!
 
 Ember
------
+=====
 
 * Client side mvc framework
 * Data that would go to template views, now goes to Ember to handle on the client side.
 
 Demo
-----
+====
 
 * Expose an API
 * Django Rest Framework
 
 Ember
------
+=====
 
 * Advanced Client side framework 
 * MVC and App structure
@@ -41,14 +45,14 @@ Ember
 * Bindings
 
 Standards Library
------------------
+=================
 
 * Object system
 * Eliminate busy work
 * Ember Bindings == @property + dependencies
 
 Components and Controllers
---------------------------
+==========================
 
 * Web components
 * Ember components

@@ -10,8 +10,11 @@ Performance Optimization
 
 	Your site is slow. But why is your site slow? There are a myriad of different problems that can cause this slowness. Drawn from real world experiences, this talk will help identify different problem areas and techniques for increasing performance. This involves both evaluating your performance on the backend and understand bottlenecks on the frontend.
 
+Performance Optimization
+------------------------
+
 Front End
----------
+=========
 
 * Large and unoptimized payloads
 * Static medai/images
@@ -25,7 +28,7 @@ Front End
 * Yslow browser plugin
 
 Backend
--------
+=======
 
 * SQL Quantities
 * Blocking code
@@ -36,18 +39,18 @@ Backend
 * Get information on calls.
 
 Improve Front End
------------------
+=================
 
 * Remove comments/whitespace
 * HTML Minification
-* Django-htmlmin
+* Django=htmlmin
 * Combine and compress css/js
 * django compressor
 * Compress images/Cache
 * Image sprites/logos/icons
 
 Resource Order
---------------
+==============
 
 * Load first styles in critical path
 * Place JS after other resources, ideally at the end of the file.
@@ -55,13 +58,13 @@ Resource Order
 * Lazy loading (Load images/assets only if the user gets there)
 
 Assets CDNS
------------
+===========
 
 * Geographically serve assets
 * Improve load time
 
 Improve Backend
----------------
+===============
 
 * SQL Queries
 * Use "values_list"
@@ -69,21 +72,21 @@ Improve Backend
 * Select_related and prefetch_related
 
 Select Related and Prefetch Related
------------------------------------
+===================================
 
 * Get foreign keys
 * If getting foreign keys use select_related
 * Prefetch related can work for many to many queries
 
 Cache
------
+=====
 
 * How should I cache?
 * Memcache
 * Use low level cache?
 
 Low Level
----------
+=========
 
 * Flexibility
 * Reduce lookups
@@ -94,7 +97,7 @@ Low Level
 * example (Get cache template for different users)
 
 Per Site Cache
---------------
+==============
 
 * Great for heavy read sites
 * Not really approprate for immediate change sites
@@ -102,14 +105,14 @@ Per Site Cache
 * Google analytics can have issues
 
 Cache Frameworks
-----------------
+================
 
 * Johnny Cache
 * Cache Machine
 * ORM Model cacheing
 
 CDNs
-----
+====
 
 * Browsers support 6 connections per hostname
 * More maximum connections
@@ -119,13 +122,13 @@ CDNs
 * Defer 
 
 Job Queue
----------
+=========
 
 * Process queues off line
 * Requires more configuration
 
 Server Level
-------------
+============
 
 * Set expires header
 * Cache control headers
