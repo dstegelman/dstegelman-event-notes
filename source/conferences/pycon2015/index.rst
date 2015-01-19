@@ -19,15 +19,15 @@ PyCon North America 2015
 2nd List of talks (Ones I couldn't get too) to explore further.
 ---------------------------------------------------------------
 
-https://us.pycon.org/2015/schedule/presentation/394/
-https://us.pycon.org/2015/schedule/presentation/377/
-https://us.pycon.org/2015/schedule/presentation/371/
-https://us.pycon.org/2015/schedule/presentation/344/
-https://us.pycon.org/2015/schedule/presentation/417/
-https://us.pycon.org/2015/schedule/presentation/409/
-https://us.pycon.org/2015/schedule/presentation/405/
-https://us.pycon.org/2015/schedule/presentation/345/
-https://us.pycon.org/2015/schedule/presentation/392/
+- https://us.pycon.org/2015/schedule/presentation/394/
+- https://us.pycon.org/2015/schedule/presentation/377/
+- https://us.pycon.org/2015/schedule/presentation/371/
+- https://us.pycon.org/2015/schedule/presentation/344/
+- https://us.pycon.org/2015/schedule/presentation/417/
+- https://us.pycon.org/2015/schedule/presentation/409/
+- https://us.pycon.org/2015/schedule/presentation/405/
+- https://us.pycon.org/2015/schedule/presentation/345/
+- https://us.pycon.org/2015/schedule/presentation/392/
 
 
 Friday
