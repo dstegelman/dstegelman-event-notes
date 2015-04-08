@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+==============
+Technical Debt
+==============
 
-**Presenter:** Person
+**Presenter:** Nina Zakharenko
 
-**Track:** Track Num
+**Track:** Track 1
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Technical debt is the code monster hiding in everyone's closet. If you ignore it, it will terrorize you at night. To banish it and re-gain your productivity, you'll need to face it head on
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/424/

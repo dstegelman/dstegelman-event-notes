@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+===================
+Continuous Delivery
+===================
 
-**Presenter:** Person
+**Presenter:** James Cammarata
 
-**Track:** Track Num
+**Track:** Track 2
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Continuos Deployment is the act of deploying software constantly. The idea is if "release early, release often" is good, releasing very often is better. It's not trivial. Automation is part of the battle, and testing is another. Learn to use tools like Jenkins and Ansible to move from deploying software once a month to 15 times every hour, and why you'll want to.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/335/

@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+============
+Advanced Git
+============
 
-**Presenter:** Person
+**Presenter:** David Baumgold
 
-**Track:** Track Num
+**Track:** Track 1
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    You know clone, commit, push, and pull. Now you're ready for the fun stuff. This talk will give you the advanced knowledge you need to take control of your git repository: rebase, cherry-pick, bisect, blame, squashing, and the reflog. You'll also get a better conceptual understanding of how git works, allowing you to chain these tools together to accomplish whatever task you need.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/343/

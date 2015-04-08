@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+==========================
+How to Write Reusable Code
+==========================
 
-**Presenter:** Person
+**Presenter:** Greg Ward
 
-**Track:** Track Num
+**Track:** Track 1
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Learning to write high-quality, reusable code takes years of dedicated work. Or you can take a shortcut: attend this talk and learn some of the tricks I've figured out over a couple of decades of programming.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/338/

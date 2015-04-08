@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+=============================
+Ship It: Deployments with PIP
+=============================
 
-**Presenter:** Person
+**Presenter:** Dan Tracy
 
-**Track:** Track Num
+**Track:** Track 2
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Gone are the days where creating system packages or scp-ing tar balls were required for deployment. With Pip, Fabric, and Jenkins we've developed a pipeline to simplify deployments and rollbacks that dove-tails into configuration management and virtualization. New machines can come fully deployed and ready to rock at a moments notice allowing you to scale out nodes quickly and painlessly.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/389/

@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+===================
+Ansible beyond YAML
+===================
 
-**Presenter:** Person
+**Presenter:** Michael Scherer
 
-**Track:** Track Num
+**Track:** Track 2
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Ansible is a configuration management tool whose primary mode of operation involve using YAML to describe deployments and operations. However, it can do much more and be extended using python, which is what we will explore in this talk. Among others, we will see the plugins system for various part of the tool and how to reuse Ansible in a script.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/368/

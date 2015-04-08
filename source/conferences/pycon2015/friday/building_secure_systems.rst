@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+=======================
+Building Secure Systems
+=======================
 
-**Presenter:** Person
+**Presenter:** lvh
 
-**Track:** Track Num
+**Track:** Track 4
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    How do you build secure software? Why do we see bad security track records in projects that otherwise seem to tick all the right engineering boxes? Why is communicating about security issues so painful? More importantly: how can we do all of these things better?
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/342/

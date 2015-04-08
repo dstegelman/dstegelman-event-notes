@@ -1,13 +1,11 @@
-=====
-Topic
-=====
+=======
+Keynote
+=======
 
-**Presenter:** Person
+**Presenter:** Van Lindberg
 
-**Track:** Track Num
+**Track:** All
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
-
-    https://us.pycon.org/2012/schedule/presentation/467/
+    Van Lindberg is Vice President of Intellectual Property at Rackspace. He is trained as a computer engineer and lawyer, but what he does best is “translate” to help businesses, techies and attorneys understand each other. Van likes working with both computer code and legal code. For the past several years, he has been using natural language processing and graph theory to help him digest and map the U.S. Patent Database. Van is currently chairman of the board of the Python Software Foundation, as well as the author of Intellectual Property and Open Source.

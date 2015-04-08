@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+===========================================
+Make Web Dev awesome with visual diff tools
+===========================================
 
-**Presenter:** Person
+**Presenter:** Daniel Vanderkam
 
-**Track:** Track Num
+**Track:** Track 3
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Visual diffs are a great way to check for regressions on web sites which may be missed by unit tests. In this talk you'll learn how to run end-to-end tests on your client and server web libraries using a tool called dpxdt. I'll also show how you can combine it with web-based diff tools like "git webdiff" to quickly and confidently iterate on web tools.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/395/

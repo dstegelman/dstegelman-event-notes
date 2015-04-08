@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+============================
+Python Performance Profiling
+============================
 
-**Presenter:** Person
+**Presenter:** A. Jesse Jiryu Davis
 
-**Track:** Track Num
+**Track:** Track 1
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Your Python program is too slow, and you need to optimize it. Where do you start? With the right tools, you can optimize your code where it counts. We’ll explore the guts of the Python profiler “Yappi” to understand its features and limitations. We’ll learn how to find the maximum performance wins with minimum effort.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/400/

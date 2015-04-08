@@ -1,13 +1,11 @@
-=====
-Topic
-=====
+=======
+Keynote
+=======
 
-**Presenter:** Person
+**Presenter:** Guido van Rossum
 
-**Track:** Track Num
+**Track:** All
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
-
-    https://us.pycon.org/2012/schedule/presentation/467/
+    Guido van Rossum is the author of the Python programming language. He continues to serve as the "Benevolent Dictator For Life" (BDFL), meaning that he continues to oversee the Python development process, making decisions where necessary. He is currently employed by Dropbox.

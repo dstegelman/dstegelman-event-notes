@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+=========================
+Is Your Rest API RESTful?
+=========================
 
-**Presenter:** Person
+**Presenter:** Miguel Grinberg
 
-**Track:** Track Num
+**Track:** Track 2
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Writing a fully complaint REST API is hard, so hard it is too common for APIs to violate one or more of the REST architectural principles. In this talk I will describe the six REST principles, and I will tell you what happens if you don't follow them.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/355/

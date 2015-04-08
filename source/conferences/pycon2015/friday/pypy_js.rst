@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+========================
+PyPy.js: What? How? Why?
+========================
 
-**Presenter:** Person
+**Presenter:** Ryan Kelly
 
-**Track:** Track Num
+**Track:** Track 2
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    PyPy.js is an experiment in building a fast and compliant in-browser python interpreter, by compiling PyPy into javascript and retargeting its JIT to emit javascript code at runtime. This talk will demonstrate the combination of technologies that make such a thing possible, the results achieved so far, and the challenges that still remain when taking python onto javascript's home turf.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/385/

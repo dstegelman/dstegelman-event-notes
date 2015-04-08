@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+============
+Beyond PEP 8
+============
 
-**Presenter:** Person
+**Presenter:** Raymond Hettinger
 
-**Track:** Track Num
+**Track:** Track 5
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Distillation of knowledge gained from a decade of Python consulting, Python training, code reviews, and serving as a core developer. Learn to avoid some of the hazards of the PEP 8 style guide and learn what really matters for creating beautiful intelligible code.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/416/

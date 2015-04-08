@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+======================================
+Techniques for Debugging Hard Problems
+======================================
 
-**Presenter:** Person
+**Presenter:** Alex Gaynor
 
-**Track:** Track Num
+**Track:** Track 1
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Sometimes your programs have bugs. Often they're shallow things, simple AttributeErrors or TypeErrors. Sometimes they're large, complex, and nearly impossible to debug. This talk explores techniques for figuring these out.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/467/

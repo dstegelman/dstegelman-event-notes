@@ -1,13 +1,15 @@
-=====
-Topic
-=====
+========================
+Keynote: Catherine Bracy
+========================
 
-**Presenter:** Person
+**Presenter:** Catherine Bracy
 
-**Track:** Track Num
+**Track:** All
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Catherine oversees Code for America’s civic engagement portfolio, including the Brigade program. She also founded and runs Code for All, Code for America’s international partnership program.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    Until November 2012, she was Director of Obama for America’s technology field office in San Francisco, the first of its kind in American political history. She was responsible for organizing technologists to volunteer their skills to the campaign’s technology and digital efforts.
+
+    Prior to joining the campaign, she ran the Knight Foundation’s 2011 News Challenge and before that was the administrative director at Harvard’s Berkman Center for Internet & Society. She is on the board of directors at the Citizen Engagement Lab and the Public Laboratory.

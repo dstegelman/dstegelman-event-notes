@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+================================
+Performance for Web Applications
+================================
 
-**Presenter:** Person
+**Presenter:** Geoff Gerrietts
 
-**Track:** Track Num
+**Track:** Track 1
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Everyone knows poor performance when they see it, and performance concerns affect every application -- web applications more than most. But finding performance problems can be extraordinarily difficult, and requires an analytical approach coupled with good instrumentation. This talk explores approaches to instrumentation and what that instrumentation can tell you.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/349/

@@ -1,13 +1,13 @@
-=====
-Topic
-=====
+=========================
+Appeal for Loose Coupling
+=========================
 
-**Presenter:** Person
+**Presenter:** Augie Fackler, Nathaniel Manista
 
-**Track:** Track Num
+**Track:** Track 2
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Great software is made out of cooperating independent modules; unusable, incorrect, and bad software happen when modules don’t (or can’t) work together. What makes modules friendly or hostile? How do abusive relationships between modules happen? How can we write code that creates and maintains healthy connections to other code?
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    https://us.pycon.org/2015/schedule/presentation/381/

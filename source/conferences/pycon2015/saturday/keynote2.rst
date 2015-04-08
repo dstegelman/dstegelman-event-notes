@@ -1,13 +1,15 @@
-=====
-Topic
-=====
+=======
+Keynote
+=======
 
-**Presenter:** Person
+**Presenter:** Gabriella Coleman
 
-**Track:** Track Num
+**Track:** All
 
 **Description:**
 
-    If your Python application has users, you should be worried about security. This talk will cover advanced material, highlighting common mistakes. Topics will include hashing and salts, timing attacks, serialization, and much more. Expect eye opening demos, and an urge to go fix your code right away.
+    Gabriella (Biella) Coleman holds the Wolfe Chair in Scientific and Technological Literacy at McGill University. Trained as a cultural anthropologist, she researches, writes, and teaches on computer hackers and digital activism and is the author of two books.
 
-    https://us.pycon.org/2012/schedule/presentation/467/
+    Her first book, Coding Freedom: The Ethics and Aesthetics of Hacking, was published with Princeton University Press in 2013 and her most recent book, Hacker, Hoaxer, Whistleblower, Spy: The Many Faces of Anonymous, published by Verso, has been named to Kirkus Reviews' Best Books of 2014.
+
+    You can learn more about her work on her website: http://gabriellacoleman.org/.
