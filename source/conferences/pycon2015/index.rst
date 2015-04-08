@@ -69,6 +69,8 @@ Sunday
 .. toctree::
     :maxdepth: 1
 
+    sunday/keynote1
+    sunday/keynote2
     sunday/data
     sunday/performance
     sunday/performance_web_apps

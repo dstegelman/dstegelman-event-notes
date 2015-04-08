@@ -21,12 +21,12 @@ Hasing and Encryption
 * Did this file get corrupted?
 * Use has for Message signing.
 * It is hard to generate a file that duplicates your stored hash.
-* Use HMAC for message signing.  
+* Use HMAC for message signing.
 
 ::
 
     hash(secret + hash)
-    
+
 * Salt your secret key
 
 ::
@@ -34,7 +34,7 @@ Hasing and Encryption
 
     salt = 'session_cookie_signing'
     hmac.new(salt + secret_key, msg)
-    
+
 * When using has algorithims do not use MD5.
 * SHA1 is better, but use SHA256
 * Web could use SHA512 as its not 32 bit.
@@ -55,7 +55,7 @@ Random Numbers
 ::
 
     from random import SystemRandom()
-    
+
 
 Timing attacks
 ==============
@@ -87,12 +87,3 @@ Am I Safe?
 * You ``must`` verify
 * Python doesn't make it easy to check SSL certs.
 * Consider using Crate.io
-
-
-
-
-
-
-
-
-
