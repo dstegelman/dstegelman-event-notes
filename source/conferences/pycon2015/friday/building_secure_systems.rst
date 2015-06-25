@@ -11,3 +11,5 @@ Building Secure Systems
     How do you build secure software? Why do we see bad security track records in projects that otherwise seem to tick all the right engineering boxes? Why is communicating about security issues so painful? More importantly: how can we do all of these things better?
 
     https://us.pycon.org/2015/schedule/presentation/342/
+
+    https://www.youtube.com/watch?v=PjcTwqYSk-E

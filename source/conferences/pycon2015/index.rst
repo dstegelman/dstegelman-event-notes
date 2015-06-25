@@ -15,6 +15,7 @@ PyCon North America 2015
 
     PyCon is the largest annual gathering for the community using and developing the open-source Python programming language. It is produced and underwritten by the Python Software Foundation, the 501(c)(3) nonprofit organization dedicated to advancing and promoting Python. Through PyCon, the PSF advances its mission of growing the international community of Python programmers.
 
+Videos are now up and included.
 
 2nd List of talks (Ones I couldn't get to) to explore further.
 ---------------------------------------------------------------

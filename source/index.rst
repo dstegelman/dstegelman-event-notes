@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=====================
-Conferences and Notes
-=====================
+===============================
+Conferences, Meetups, and Notes
+===============================
 
 Below is my collection of notes on general Django/Python development as well as conference and meet up notes.
 
@@ -20,19 +20,17 @@ Meetups
     meetups/boulder_django_august_27_2013
     meetups/boulder_python_january_13_2015
 
-
-Notes
-=====
+My Talks
+========
 
 .. toctree::
     :maxdepth: 1
 
-    notes/django/django_resources
-    notes/django/django_snippets
-    notes/django/django_class_views
-    notes/python/python_resources
-    notes/django/testing/selenium
-
+    mytalks/deploying_django
+    mytalks/celery
+    mytalks/django_con_south
+    mytalks/salt
+    mytalks/solr_search
 
 Conferences
 ===========
@@ -45,3 +43,16 @@ Conferences
     conferences/djangocon2013/index
     conferences/pycon2012/index
     conferences/djangocon2012/index
+
+
+Notes
+=====
+
+.. toctree::
+    :maxdepth: 1
+
+    notes/django/django_resources
+    notes/django/django_snippets
+    notes/django/django_class_views
+    notes/python/python_resources
+    notes/django/testing/selenium

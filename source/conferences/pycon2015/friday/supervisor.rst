@@ -11,3 +11,5 @@ Using Supervisor for Fun and Profit
     Supervisor is a popular Python application that lets you control and monitor process state on UNIX-like systems. This talk describes what it is, and how to use it effectively to make your application deployments better.
 
     https://us.pycon.org/2015/schedule/presentation/380/
+
+    https://www.youtube.com/watch?v=p0iQfT85IvM
