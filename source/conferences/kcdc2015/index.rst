@@ -24,3 +24,4 @@ Thursday
 
     thursday/remote
     thursday/rest
+    thursday/solid
