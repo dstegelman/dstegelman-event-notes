@@ -40,6 +40,7 @@ Conferences
 .. toctree::
     :maxdepth: 1
 
+    conferences/kcdc2015/index
     conferences/pycon2015/index
     conferences/djangocon2013/index
     conferences/pycon2012/index
