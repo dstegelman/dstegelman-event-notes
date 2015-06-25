@@ -23,3 +23,4 @@ Thursday
     :maxdepth: 1
 
     thursday/remote
+    thursday/rest
