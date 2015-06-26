@@ -25,3 +25,12 @@ Thursday
     thursday/remote
     thursday/rest
     thursday/solid
+
+
+Friday
+------
+
+.. toctree::
+    :maxdepth: 1
+
+    friday/components
