@@ -34,3 +34,4 @@ Friday
     :maxdepth: 1
 
     friday/components
+    friday/manager
