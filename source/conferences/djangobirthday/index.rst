@@ -49,3 +49,19 @@ http://pyvideo.org/video/3656/born-in-the-lfk
 Django Regrets
 ~~~~~~~~~~~~~~
 http://pyvideo.org/video/3664/django-regrets
+
+7 Years with Django
+~~~~~~~~~~~~~~~~~~~
+http://pyvideo.org/video/3655/7-years-with-django-to-core-developer-and-back
+
+Django Origins
+~~~~~~~~~~~~~~
+http://pyvideo.org/video/3659/some-things-ive-made-with-django
+
+How Django is Good for your Health
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+http://pyvideo.org/video/3665/how-django-is-good-for-your-health
+
+The Mysterious Django Community in Mexico
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+http://pyvideo.org/video/3668/the-mysterious-django-community-in-mexico
