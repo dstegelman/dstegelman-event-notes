@@ -9,8 +9,8 @@ Guerilla APIs
 **Description:**
 
 	In an ideal world, every web system would provide a well designed REST API with oAuth authentication. But what do you do when those things don't exist?
-	
-	
+
+
 Guerilla APIs
 -------------
 

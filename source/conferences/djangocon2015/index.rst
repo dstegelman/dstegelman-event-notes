@@ -14,7 +14,6 @@ Django Con US 2015
 **Description:**
 
     DjangoCon US is the main opportunity for djangonauts to come together in the United States. It will consist of two tracks of talks over three days, and will also provide for open sessions, lightning talks, and a development sprint after the conference.
-s
 
 Monday
 ------
@@ -39,8 +38,6 @@ Monday
     monday/mocking
     monday/meta
     monday/geo
-    
-
 
 Tuesday
 -------
@@ -48,10 +45,25 @@ Tuesday
 .. toctree::
     :maxdepth: 1
 
-
+    tuesday/rikki_keynote
+    tuesday/wagtail
+    tuesday/django_deployments
+    tuesday/why_admin_slow
+    tuesday/postgres_18
+    tuesday/explore_solar_system
+    tuesday/money_money
+    tuesday/minimum_viable_sec
 
 Wednesday
 ---------
 
 .. toctree::
     :maxdepth: 1
+
+    wednesday/iam_doctor
+    wednesday/jackie_keynote
+    wednesday/postgres_performance
+    wednesday/elasticsearch
+    wednesday/naming_things
+    wednesday/performance_testing
+    wednesday/easy_app_metrics

@@ -1,9 +1,0 @@
-================
-Python Resources
-================
-
-Libraries
----------
-
-Learning
---------

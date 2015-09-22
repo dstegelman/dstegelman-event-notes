@@ -41,11 +41,3 @@ PJAX
 
 * Single piece of middleware
 * Real time pushing
-
-
-
-
-
-
-
-
