@@ -26,6 +26,7 @@ My Talks
 .. toctree::
     :maxdepth: 1
 
+    mytalks/drf
     mytalks/deploying_django
     mytalks/celery
     mytalks/django_con_south
@@ -38,6 +39,7 @@ Conferences
 .. toctree::
     :maxdepth: 1
 
+    conferences/djangocon2015/index
     conferences/djangobirthday/index
     conferences/kcdc2015/index
     conferences/pycon2015/index
