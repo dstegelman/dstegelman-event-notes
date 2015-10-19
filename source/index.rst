@@ -19,6 +19,7 @@ Meetups
     meetups/boulder_django_july_30_2013
     meetups/boulder_django_august_27_2013
     meetups/boulder_python_january_13_2015
+    meetups/fort_collins_data
 
 My Talks
 ========
